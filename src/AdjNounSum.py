@@ -2,6 +2,8 @@ import collections
 import spacy
 import en_core_web_sm
 
+from src.utils import plot_count
+
 
 
 class PairAdjectiveNounSummarizer:
@@ -33,10 +35,10 @@ class PairAdjectiveNounSummarizer:
                 if token.dep_ == 'acomp':
                     noun = [e for e in token.head.children if e.dep_ == "nsubj"]
                     if noun:
-                        pair = ( token.text.lower(), noun[0].text.lower() )
+                        # lemmatize the tokens
+                        pair = ( token.lemma_.lower(), noun[0].lemma_.lower() )
                         pairs.append(pair)
                 
-                # maybe using the lemma ?
                 
         observations = collections.Counter(pairs)#collections.defaultdict(int)
 
