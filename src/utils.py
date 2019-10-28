@@ -20,7 +20,8 @@ def load_reviews(path) -> list:
 
 
 # plot the data 
-def plot_count(coll : collections.defaultdict(int), title : str, max : int) -> ():
+def plot_count(coll : collections.defaultdict(int), title : str, max : int, star : int) -> ():
+    colors = ['darkblue', 'blue', 'cyan', 'gold', 'orange']
     sortedls = sorted(coll.items(), key=operator.itemgetter(1))
     top = list(sortedls)[-max:]
     top.reverse()
@@ -34,10 +35,15 @@ def plot_count(coll : collections.defaultdict(int), title : str, max : int) -> (
     print(labels)
     print(values)
 
-    plt.bar(labels, values)
+    bars = plt.bar(labels, values)
+    
+    #set colors for specific stars
+    for e in bars:
+        e.set_color(colors[star-1])
+
     plt.title(title)
     plt.tick_params(axis='x', which='major', labelsize=5)
-    plt.show()
+    #plt.show()
     fig = plt.gcf()
     fig.savefig("".join(title.split(' ')))
     fig.clf()

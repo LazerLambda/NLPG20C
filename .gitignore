@@ -3,5 +3,7 @@
 *.zip
 *.json
 *.tex
+*-txt
 *.pyc
 *.ipynb_checkpoints
+src/__pycache__/*

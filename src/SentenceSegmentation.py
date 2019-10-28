@@ -37,7 +37,7 @@ class SentenceSegmentation:
     
     def plot_sentence_length(self):
         for i in range(1,6):
-            plot_count(self.rated_reviews[i-1], (str(i) + ' stars'), 10)
+            plot_count(self.rated_reviews[i-1], (str(i) + ' stars - Sentence length'), 10, i)
             
 
 
