@@ -115,7 +115,7 @@ def most_frequent_adj(star):
 
     # print duration
     time_lapse = time.time() - start
-    print("Done rating", star, ",", len(rating_reviews), ", time lapsed:", time_lapse)
+    print("Done rating", star, ",", len(rating_reviews), "reviews, time lapsed:", time_lapse)
     print("")
 
     return np.array([adj_top10, adj_top10_ind])
