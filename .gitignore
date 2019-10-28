@@ -4,3 +4,4 @@
 *.json
 *.tex
 *.pyc
+*.ipynb_checkpoints
