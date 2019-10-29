@@ -20,8 +20,8 @@ class PairAdjectiveNounSummarizer:
             doc = self.nlp(text)
             for token in doc:
 
-        #        if not e['business_id'] == 'vMpJzMFst_9GP4boeqWIRg':
-        #            continue
+                # if not e['business_id'] == 'vMpJzMFst_9GP4boeqWIRg':
+                #     continue
 
                 # <Adj, Noun>
                 pair = None
