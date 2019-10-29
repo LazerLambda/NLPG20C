@@ -1,6 +1,7 @@
 import collections
 import spacy
 import en_core_web_sm
+import random
 
 from src.utils import plot_count
 
@@ -12,16 +13,31 @@ class PairAdjectiveNounSummarizer:
         self.reviews = reviews
         self.nlp = en_core_web_sm.load()
 
-    def pair(self) -> ():
+    def random_5_business(self):
+        business = set()
+        while len(business)<5:
+            r_tmp = random.randint(0, len(self.reviews)-1)
+            business.add(self.reviews[r_tmp]['business_id'])
+
+        
+
+        for i in business:
+            random_review = list()
+            for review in self.reviews:
+                if (review['business_id'] == i):
+                    random_review.append(review)
+            self.pair(random_review, i)
+
+
+    def pair(self, reviews : list, name : str) -> ():
+        
         pairs = list()
 
-        for e in self.reviews:
+        for e in reviews:
+            
             text = e['text']
             doc = self.nlp(text)
             for token in doc:
-
-                # if not e['business_id'] == 'vMpJzMFst_9GP4boeqWIRg':
-                #     continue
 
                 # <Adj, Noun>
                 pair = None
@@ -41,5 +57,6 @@ class PairAdjectiveNounSummarizer:
                 
                 
         observations = collections.Counter(pairs)#collections.defaultdict(int)
-
+        print("Results %s" % name)
         print(observations.most_common(20))
+        print("\n\n")

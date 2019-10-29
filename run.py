@@ -11,19 +11,20 @@ REVIEWS = load_reviews('reviewSelected100.json')
 # -------------
 
 # Sentence Segmentation
-Sentences = SentenceSegmentation(REVIEWS)
-Sentences.sentence_seg()
-Sentences.plot_sentence_length()
+#Sentences = SentenceSegmentation(REVIEWS)
+#Sentences.sentence_seg()
+#Sentences.plot_sentence_length()
+#Sentences.avg()
 
 # Tokenization and Stemming
-Token = Tokenization(REVIEWS)
-Token.review()
-Token.common_tokens()
+# Token = Tokenization(REVIEWS)
+# Token.review()
+# Token.common_tokens()
 
 # POS tagging
-pos_tag(REVIEWS)
+#pos_tag(REVIEWS)
 
 # Noun Adjective Pair Summarizer
 # ------------------------------
 Pairs = PairAdjectiveNounSummarizer(REVIEWS)
-Pairs.pair()
+Pairs.random_5_business()

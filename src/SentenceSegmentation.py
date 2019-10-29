@@ -38,6 +38,14 @@ class SentenceSegmentation:
     def plot_sentence_length(self):
         for i in range(1,6):
             plot_count(self.rated_reviews[i-1], (str(i) + ' stars - Sentence length'), 10, i)
+
+    def avg(self):
+
+        for i in range(0,5):
+            s = float(sum(self.rated_reviews[i]))
+            l = float(len(self.rated_reviews[i]))
+            print("Average")
+            print(str(s / l))
             
 
 

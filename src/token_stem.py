@@ -9,6 +9,12 @@ from nltk.corpus import stopwords
 from src.utils import plot_graph
 
 stop_words = set(stopwords.words('english'))
+stop_words.add("n't")
+stop_words.add("'s")
+stop_words.add("''")
+stop_words.add("``")
+stop_words.add("'ve")
+
 marks = ['(', ')', '?', '!', '.', '...', ',', '-', '$']
 ps = nltk.stem.PorterStemmer()
 
