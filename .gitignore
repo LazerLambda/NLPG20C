@@ -2,8 +2,7 @@
 *.log
 *.zip
 *.json
-*.tex
-*-txt
+*.txt
 *.pyc
 *.ipynb_checkpoints
 src/__pycache__/*
