@@ -8,14 +8,20 @@ import operator
 def load_reviews(path) -> list:
 
     reviews = list()
-
-    with open(path, 'r', encoding="ISO-8859-1") as file:
-        while file.readline():
-            try:
-                reviews.append(json.loads(file.readline()))
-            except:
-                continue
-
+    
+    #somehow this part only loads half of the reviews
+    # with open(path, 'r', encoding="ISO-8859-1") as file:
+    #     while file.readline():
+    #         try:
+    #             reviews.append(json.loads(file.readline()))
+    #         except:
+    #             continue
+    
+    #loads all 15300 reviews
+    with open(path) as json_file:
+        for p in json_file:
+            reviews.append(json.loads(p))
+            
     return reviews
 
 
