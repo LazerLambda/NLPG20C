@@ -3,6 +3,8 @@ from src.AdjNounSum import PairAdjectiveNounSummarizer
 from src.utils  import load_reviews
 from src.pos_tagging import pos_tag
 from src.token_stem import Tokenization
+from src.most_frequent_adj_single import most_frequent_adj_single
+from src.Application import App
 
 # import data
 REVIEWS = load_reviews('reviewSelected100.json')
@@ -24,7 +26,17 @@ REVIEWS = load_reviews('reviewSelected100.json')
 # POS tagging
 #pos_tag(REVIEWS)
 
+# Most frequent adjectives
+# running on single process
+# top10_adj = most_frequent_adj_single(REVIEWS)
+# top10_adj.top10()
+# to run with multiprocessing, kindly proceed to run directly from the file src/most_frequent_adj.py
+
 # Noun Adjective Pair Summarizer
 # ------------------------------
-Pairs = PairAdjectiveNounSummarizer(REVIEWS)
-Pairs.random_5_business()
+#Pairs = PairAdjectiveNounSummarizer(REVIEWS)
+#Pairs.random_5_business()
+
+# Application
+App = App(REVIEWS)
+App.random_5_business()
