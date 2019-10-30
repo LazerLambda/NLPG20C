@@ -102,7 +102,7 @@ class most_frequent_adj_single:
         # list of top 10 adjectives in the reviews of rating star='star'
         adj_top10 = []
         for i in range(0,10):
-            adj_top10.append(adj_count_sorted[i][0])
+            adj_top10.append(adj_count_sorted[i])
 
         # sort the list based on adjectives with highest indicativeness
         adj_ind_sorted = sorted(adj_ind_list, key=getKey, reverse=True)
@@ -110,7 +110,7 @@ class most_frequent_adj_single:
         # list of top 10 adjectives in the reviews of rating star='star'
         adj_top10_ind = []
         for i in range(0,10):
-            adj_top10_ind.append(adj_ind_sorted[i][0])
+            adj_top10_ind.append(adj_ind_sorted[i])
 
         # print duration
         time_lapse = time.time() - self.start
