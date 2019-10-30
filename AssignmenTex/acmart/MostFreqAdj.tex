@@ -1,0 +1,78 @@
+There are two tasks in this section: (1) To list the top-10 most frequently used adjectives for each rating star (i.e. 1 to 5), and (2) To list the top-10 most indicative adjectives for each rating star. First, we tokenize all the words (including punctuations) in all the reviews and count the frequency of each word in all the reviews, storing both in separate arrays. Then, we separate the reviews based on the rating star, tokenize the reviews and do POS tagging on the tokens to identify the adjectives. Using the nltk library, the POS tagging for adjectives is 'JJ'. For each adjective identified in a rating star, the adjective and its frequency will be stored in two arrays. After going through all the reviews with the particular rating star, we calculate the "indicativeness" of each adjectives using the formula:
+    \begin{equation}
+        Indicativeness = P(w|Ri)×log(P(w|Ri)/P(w))
+    \end{equation}
+    
+    where P(w|Ri) is the probability of observing the adjective w in the reviews with rating star i, and P(w) is the probability of observing the adjective w in all the reviews.
+    
+The adjectives array is then sorted twice, based on the frequency and based on the indicativeness. From the sorted arrays, we return the top-10 most frequently used adjectives for the rating star and the top-10 most indicative adjectives for the rating star, and print them. The result is as follow:
+
+    \begin{center}
+        \tiny
+        \begin{table}[!h]
+        \caption{Top 10 Most Frequently Used Adjectives}
+            \begin{tabular}{c c c c c}
+                1 Star & 2 Stars & 3 Stars & 4 Stars & 5 Stars\\
+                'good' '661' & 'good' '789' & 'good' '1552' & 'good' '2711' & 'great' '2761'\\
+                'other' '543' & 'other' '396' & 'other' '570' & 'great' '1572' & 'good' '2099'\\
+                'bad' '433' & 'great' '289' & 'great' '493' & 'nice' '793' & 'friendly' '974'\\
+                'first' '337' & 'bad' '236' & 'nice' '430' & 'other' '782' & 'delicious' '913'\\
+                'new' '319' & 'nice' '215' & 'little' '384' & 'little' '693' & 'nice' '849'\\
+                'last' '310' & 'first' '214' & 'small' '285' & 'delicious''616' & 'other' '800'\\
+                'horrible' '257' & 'much' '202' & 'bad' '267' & 'fresh' '465' & 'amazing' '645'\\
+                'few' '249' & 'little' '193' & 'few' '250' & 'friendly' '462' & 'fresh' '643'\\
+                'same' '246' & 'few' '181' & 'decent' '237' & 'small' '427' & 'first' '622'\\
+                'next' '244' & 'small' '175' & 'hot' '200' & 'first' '392' & 'new' '607'\\
+                 
+            \end{tabular}
+        \end{table}
+    \end{center}
+    
+    \begin{center}
+        \tiny
+        \begin{table}[!h]
+        \caption{Top 10 Most Indicative Adjectives}
+            \begin{tabular}{c c c c c}
+                1 Star & 2 Stars\\
+                'horrible' '0.000726' & 'bad' '0.000337'\\
+                'terrible' '0.000669' & 'same' '0.000297'\\
+                'bad' '0.000458' & 'dry' '0.000237'\\
+                'rude' '0.000381' & 'other' '0.000165'\\
+                'poor' '0.000289' & 'second' '0.000161'\\
+                'awful' '0.000262' & 'decent' '0.000160'\\
+                'last' '0.000230' & 'chinese' '0.000157'\\
+                'unprofessional' '0.000194' & 'slow' '0.000153'\\
+                'same' '0.000149' & 'empty' '0.000149'\\
+                'wrong' '0.000127' & 'ok' '0.000143'\\
+                \\
+            \end{tabular}
+            
+            \begin{tabular}{c c c}
+                3 Stars & 4 Stars & 5 Stars\\
+                'good' '0.001890' & 'good' '0.002338' & 'great' '0.001498'\\
+                'decent' '0.000767' & 'little' '0.000473' & 'delicious' '0.000638'\\
+                'other' '0.000563' & 'delicious' '0.000463' & 'happy' '0.000513'\\
+                'small' '0.000448' & 'nice' '0.000379' & 'friendly' '0.000470'\\
+                'ok' '0.000350' & 'tasty' '0.000365' & 'wonderful' '0.000396'\\
+                'little' '0.000308' & 'small' '0.000315' & 'excellent' '0.000382'\\
+                'average' '0.000287' & 'fresh' '0.000264' & 'professional' '0.000370'\\
+                'bad' '0.000252' & 'great' '0.000258' & 'helpful' '0.000358'\\
+                'large' '0.000244' & 'busy' '0.000190' & 'fantastic' '0.000353'\\
+                'fine' '0.000190' & 'large' '0.000188' & 'awesome' '0.000338'\\
+            \end{tabular}
+        \end{table}
+    \end{center}
+
+The results for the most indicative adjectives are more descriptive for a rating system where 1 stars are the worst rating. It gives more weight to specific words (terrible, horrible, unprofessional) which appear more frequently in the specific rating. Meanwhile, the list of most frequently used adjectives is less descriptive since it does not take into account for negation. As an example, the following table shows the frequency of the adjective 'good' in each rating star.
+
+    \begin{center}
+        \begin{table}[!h]
+        \caption{Frequency of the word 'good' in each rating star}
+            \begin{tabular}{c c c c c}
+                1 Star & 2 Stars & 3 Stars & 4 Stars & 5 Stars\\
+                661 & 789 & 1552 & 2711 & 2099\\
+            \end{tabular}
+        \end{table}
+    \end{center}
+    
+Although the word 'good' is in the top 10 list of most frequently used adjectives for all the rating star, the word 'good' in reviews with lower number of stars is more likely to refer to 'not good' than in reviews with higher number of stars. The result may be less accurate because in the tokenization, the punctuations are also counted and are included in the word count. We assume that this will not affect the result to a large extent because punctuations make up a very small proportion of all the words in all the reviews. We conclude that the most indicative adjectives are more useful to identify the different rating stars.
