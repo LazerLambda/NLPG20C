@@ -223,41 +223,75 @@
 	\subsection{POS Tagging}
 	\subsection{Most Frequent Adjectives for each Rating}
 	\section{Development of a〈Noun - Adjective〉Pair Summarizer}
-	For the extraction of the Noun-Adjectives, we used a dependency-grammar approach. In dependency grammar, adjectives are labeled as 'amod'(sources) for sentences like "... bad service ..." while in the case of Adjectives in sentences like "... the service at ... is bad ...", the adjectives are labeled as 'acomp'. With this labels we were able to identify the adjectives. For the nouns we searched the dependency tree of the parent node of the adjective for 
+	For the extraction of the Noun-Adjectives, we used a dependency-grammar approach. In dependency grammar, adjectives are labeled as 'amod' for sentences like "... bad service ..." while in the case of Adjectives in sentences like "... the service at ... is bad ...", the adjectives are labeled as 'acomp'. With this labels we were able to identify the adjectives. For the nouns we searched the dependency tree of the parent node of the adjective for 
 	the 'nsubj' relation. All of these relations were being stored in an array. After another check of the POS-Tag of the collected 'nsubj' relations, we were able to write the ADJ-NOUN Tuples to the final array. Before the adding we lemmatized the words so we can have more accurate number of the used words in the final. We decided to do so since our corpus is to small to distinct between different tenses and therefore increasing the accuracy for the summary of the used adjectives and nouns. The lemmatization was done after the Adjective and Noun were identified For the research we looked at the top twenty appearing pairs.
 	In the results we were able to see some characteritics of the reviewed business. It  was possible for example, to make an assumption about the business of the following review:
-	'''
-	Results oLb3-eXUFtCFJl2DuBhcvA
-	[(('front', 'desk'), 20), (('free', 'wifi'), 5), (('clean', 'room'), 5), (('next', 'day'), 5), (('next', 'door'), 4), (('light', 'sleeper'), 4), (('rental', 'car'), 3), (('friendly', 'staff'), 3), (('comfortable', 'bed'), 3), (('great', 'breakfast'), 3), (('hot', 'food'), 3), (('free', 'breakfast'), 3), (('continental', 'breakfast'), 3), (('clean', 'rooms'), 3), (('new', 'room'), 3), (('next', 'morning'), 3), (('complimentary', 'breakfast'), 3), (('free', 'shuttle'), 3), (('first', 'night'), 3), (('first', 'day'), 2)]
-	'''
-	Here we were able to assume, that the review describes an hotel. Some other reviews also indicated the sector of the business. 
-	'''
-	Results 2xrpo-LXV9uGIwpvy0dwUw
-	[(('clean', 'car'), 4), (('other', 'locations'), 3), (('great', 'job'), 3), (('basic', 'wash'), 2), (('terrible', 'wash'), 2), (('poor', 'job'), 2), (('high', 'pressure'), 2), (('terrible', 'job'), 2), (('helpful', 'guy'), 2), (('horrible', 'service'), 2), (('bad', 'service'), 2), (('worth', 'place'), 2), (('different', 'options'), 2), (('only', 'place'), 2), (('friendly', 'staff'), 2), (('terrible', 'service'), 2), (('horrible', 'smell'), 2), (('happy', 'camper'), 2), (('classic', 'wash'), 2), (('synthetic', 'change'), 2)]
-	'''
+
+	After reviewing Business 2 (oLb3-eXUFtCFJl2DuBhcvA)  we were able to assume, that the review describes an hotel. Some other reviews also indicated the sector of the business. 
+
+	After reviewing a few reviews on Business 1 (2xrpo-LXV9uGIwpvy0dwUw), it became obvious, that this business is a car wash. The reviews were mixed, some criticized alot and other reviews were mentioning the good result.  
 	It was also possible to identify the kind of food which is served in some restaurants, like mexican, vietnamese or chinese for example.
-	'''
-	Results DcfkRb2bS2c8z21WH-aS6A
-	[(('carne', 'asada'), 13), (('mexican', 'food'), 5), (('free', 'chips'), 4), (('great', 'place'), 4), (('authentic', 'food'), 3), (('red', 'sauce'), 3), (('mexican', 'restaurants'), 3), (('good', 'food'), 3), (('friendly', 'staff'), 3), (('best', 'food'), 3), (('little', 'flavor'), 2), (('toasted', 'bread'), 2), (('iced', 'tea'), 2), (('reasonable', 'price'), 2), (('many', 'restaurants'), 2), (('many', 'people'), 2), (('good', 'salsa'), 2), (('great', 'tacos'), 2), (('good', 'taco'), 2), (('favorite', 'place'), 2)]
-	'''
-	\begin{verbatim}
-	Results c1_adyjYG6JEa1PZAXMOBg
-	[(('south', 'indian'), 14), (('indian', 'food'), 14), (('indian', 'restaurant'), 5), (('other', 'places'), 4), (('first', 'time'), 4), (('friendly', 'staff'), 4), (('good', 'food'), 4), (('first', 'experience'), 3), (('high', 'price'), 3), (('second', 'time'), 3), (('indian', 'buffet'), 3), (('great', 'taste'), 2), (('crispy', 'dosa'), 2), (('last', 'night'), 2), (('indian', 'place'), 2), (('great', 'place'), 2), (('delicious', 'food'), 2), (('decent', 'reviews'), 2), (('indian', 'cuisine'), 2), (('tasty', 'food'), 2)]
-	\end{verbatim}
-	
-	\begin{spverbatim}
-	Results R4EhR8xhONLFqqI6ZnzNWw
-	[(('good', 'dumpling'), 8), (('good', 'food'), 8), (('korean', 'food'), 7), (('korean', 'dishes'), 7), (('steamed', 'dumplings'), 6), (('chinese', 'food'), 5), (('chinese', 'dumplings'), 4), (('chinese', 'cuisine'), 4), (('korean', 'soup'), 4), (('great', 'service'), 4), (('fried', 'pork'), 4), (('huge', 'fan'), 3), (('cheap', 'food'), 3), (('awesome', 'dumpling'), 3), (('fresh', 'noodle'), 3), (('north', 'korean'), 3), (('other', 'dishes'), 3), (('fried', 'rice'), 3), (('hidden', 'gem'), 3), (('northern', 'chinese'), 3)]
-	\end{spverbatim}
-	
+
 	
 	
 	\begin{center}
-		\begin{tabular}{ c c c c c}
-			cell1 & cell2 & cell3  & cell2 & cell3\\ 
-			cell4 & cell5 & cell6  & cell2 & cell3\\  
-			cell7 & cell8 & cell9  & cell2 & cell3   
+		\tiny
+		\begin{table}[!h]
+		\caption{business reviews}
+		\begin{tabular}{c c}
+			2xrpo-LXV9uGIwpvy0dwUw		&oLb3-eXUFtCFJl2DuBhcvA\\
+			(('clean', 'car'), 4)		&(('front', 'desk'), 20)\\
+			(('other', 'locations'), 3)		&(('free', 'wifi'), 5)\\
+			(('great', 'job'), 3)		&(('clean', 'room'), 5)\\
+			(('basic', 'wash'), 2)		&(('next', 'day'), 5)\\
+			(('terrible', 'wash'), 2)		&(('next', 'door'), 4)\\
+			(('poor', 'job'), 2)		&(('light', 'sleeper'), 4)\\
+			(('high', 'pressure'), 2)		&(('rental', 'car'), 3)\\
+			(('terrible', 'job'), 2)		&(('friendly', 'staff'), 3)\\
+			(('helpful', 'guy'), 2)		&(('comfortable', 'bed'), 3)\\
+			(('horrible', 'service'), 2)		&(('great', 'breakfast'), 3)\\
+			(('bad', 'service'), 2)		&(('hot', 'food'), 3)\\
+			(('worth', 'place'), 2)		&(('free', 'breakfast'), 3)\\
+			(('different', 'options'), 2)		&(('continental', 'breakfast'), 3)\\
+			(('only', 'place'), 2)		&(('clean', 'rooms'), 3)\\
+			(('friendly', 'staff'), 2)		&(('new', 'room'), 3)\\
+			(('terrible', 'service'), 2)		&(('next', 'morning'), 3)\\
+			(('horrible', 'smell'), 2)		&(('complimentary', 'breakfast'), 3)\\
+			(('happy', 'camper'), 2)		&(('free', 'shuttle'), 3)\\
+			(('classic', 'wash'), 2)		&(('first', 'night'), 3)\\
+			(('synthetic', 'change'), 2)		&(('first', 'day'), 2)\\
 		\end{tabular}
+	\end{table}
+	\end{center}
+	\begin{center}
+		\tiny
+		\begin{table}[!h]
+		\caption{business reviews2}
+		\begin{tabular}{c c c}
+			R4EhR8xhONLFqqI6ZnzNWw		&c1\char`_adyjYG6JEa1PZAXMOBg		&DcfkRb2bS2c8z21WH-aS6A\\
+			(('good', 'dumpling'), 8)		&(('south', 'indian'), 14)		&(('carne', 'asada'), 13)\\
+			(('good', 'food'), 8)		&(('indian', 'food'), 14)		&(('mexican', 'food'), 5)\\
+			(('korean', 'food'), 7)		&(('indian', 'restaurant'), 5)		&(('free', 'chips'), 4)\\
+			(('korean', 'dishes'), 7)		&(('other', 'places'), 4)		&(('great', 'place'), 4)\\
+			(('steamed', 'dumplings'), 6)		&(('first', 'time'), 4)		&(('authentic', 'food'), 3)\\
+			(('chinese', 'food'), 5)		&(('friendly', 'staff'), 4)		&(('red', 'sauce'), 3)\\
+			(('chinese', 'dumplings'), 4)		&(('good', 'food'), 4)		&(('mexican', 'restaurants'), 3)\\
+			(('chinese', 'cuisine'), 4)		&(('first', 'experience'), 3)		&(('good', 'food'), 3)\\
+			(('korean', 'soup'), 4)		&(('high', 'price'), 3)		&(('friendly', 'staff'), 3)\\
+			(('great', 'service'), 4)		&(('second', 'time'), 3)		&(('best', 'food'), 3)\\
+			(('fried', 'pork'), 4)		&(('indian', 'buffet'), 3)		&(('little', 'flavor'), 2)\\
+			(('huge', 'fan'), 3)		&(('great', 'taste'), 2)		&(('toasted', 'bread'), 2)\\
+			(('cheap', 'food'), 3)		&(('crispy', 'dosa'), 2)		&(('iced', 'tea'), 2)\\
+			(('awesome', 'dumpling'), 3)		&(('last', 'night'), 2)		&(('reasonable', 'price'), 2)\\
+			(('fresh', 'noodle'), 3)		&(('indian', 'place'), 2)		&(('many', 'restaurants'), 2)\\
+			(('north', 'korean'), 3)		&(('great', 'place'), 2)		&(('many', 'people'), 2)\\
+			(('other', 'dishes'), 3)		&(('delicious', 'food'), 2)		&(('good', 'salsa'), 2)\\
+			(('fried', 'rice'), 3)		&(('decent', 'reviews'), 2)		&(('great', 'tacos'), 2)\\
+			(('hidden', 'gem'), 3)		&(('indian', 'cuisine'), 2)		&(('good', 'taco'), 2)\\
+			(('northern', 'chinese'), 3)		&(('tasty', 'food'), 2)		&(('favorite', 'place'), 2)\\
+			
+		\end{tabular}
+	\end{table}
 	\end{center}
 	
 	
