@@ -55,6 +55,7 @@ def plot_count(coll : collections.defaultdict(int), title : str, max : int, star
     fig.clf()
 
 def plot_graph(input_data, title, xlabel, ylabel, image_title):
+    plt.figure()
     x = list(input_data.keys())
     y = list(input_data.values())
     plt.bar(x, y, width=1.0)
