@@ -51,9 +51,18 @@ class PairAdjectiveNounSummarizer:
                 if token.dep_ == 'acomp':
                     noun = [e for e in token.head.children if e.dep_ == "nsubj"]
                     if noun:
-                        # lemmatize the tokens
-                        pair = ( token.lemma_.lower(), noun[0].lemma_.lower() )
-                        pairs.append(pair)
+                        for e in noun:
+
+                            # skip non nouns
+                            if not e.pos_ == 'NOUN':
+                                continue
+
+                            # lemmatize the tokens
+                            if e.lemma_ == '-PRON-':
+                                pair = ( token.lemma_.lower(), e.text.lower() )
+                            else:
+                                pair = ( token.lemma_.lower(), e.lemma_.lower() )
+                            pairs.append(pair)
                 
                 
         observations = collections.Counter(pairs)#collections.defaultdict(int)
