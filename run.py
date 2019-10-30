@@ -39,4 +39,4 @@ REVIEWS = load_reviews('reviewSelected100.json')
 
 # Application
 App = App(REVIEWS)
-App.random_5_business()
+App.run()
