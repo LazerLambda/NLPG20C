@@ -8,21 +8,11 @@ import operator
 from nltk.corpus import stopwords
 from src.utils import plot_graph
 
-stop_words = set(stopwords.words('english'))
-stop_words.add("n't")
-stop_words.add("'s")
-stop_words.add("''")
-stop_words.add("``")
-stop_words.add("'ve")
-
-marks = ['(', ')', '?', '!', '.', '...', ',', '-', '$']
-ps = nltk.stem.PorterStemmer()
-
 class Tokenization:
     def __init__(self, reviews : list) -> ():
         self.reviews = reviews
         self.stop_words = set(stopwords.words('english'))
-        self.marks = ['(', ')', '?', '!', '.', '...', ',', '-', '$']
+        self.marks = ['(', ')', '?', '!', '.', '...', ',', '-', '$', "n't", "'s", "''", "``", "'ve"]
         self.ps = nltk.stem.PorterStemmer()
 
     def review(self):
