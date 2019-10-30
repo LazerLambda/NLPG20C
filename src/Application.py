@@ -10,22 +10,17 @@ class App:
         self.bad = ['horrible', 'terrible', 'bad', 'rude', 'poor', 'awful', 'unfprofessional', 'wrong', 'slow']
         self.negate = ['no', 'not', 'never', 'nobody']
 
-    def random_5_business(self):
-        business = set()
-        while len(business)<5:
-            r_tmp = random.randint(0, len(self.reviews)-1)
-            business.add(self.reviews[r_tmp]['business_id'])      
+    def run(self):
+        print("Input business ID: ")
+        name = input()
 
-        for i in business:
-            business_review = list()
-            for review in self.reviews:
-                if (review['business_id'] == i):
-                    business_review.append(review['text'])
-            self.run(business_review, i)
-
-    def run(self, business_reviews: list, name: str):
         good_feature = []
         bad_feature = []
+
+        business_reviews = list()
+        for review in self.reviews:
+            if (review['business_id'] == name):
+                business_reviews.append(review['text'])
 
         for review in business_reviews:
             tokens = nltk.word_tokenize(review)
