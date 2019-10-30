@@ -27,6 +27,7 @@
 
 \usepackage{spverbatim}
 \usepackage{graphicx}
+\usepackage{longtable}
 
 %%
 %% \BibTeX command to typeset BibTeX logo in the docs
@@ -163,11 +164,14 @@
 	
 	\section{Dataset Analysis}
 	\subsection{Writing Style}
+	\input{WritingStyle.tex}
 	\subsection{Sentence Segmentation}
 	\input{SentenceSegmentation}
 	\subsection{Tokenization and Stemming}
 	\input{TokenizationStemming}
+	\clearpage
 	\subsection{POS Tagging}
+	\input{PosTagging.tex}
 	\subsection{Most Frequent Adjectives for each Rating}
 	\section{Development of a <Noun - Adjective> Pair Summarizer}
 	\input{NounAdjPair}
