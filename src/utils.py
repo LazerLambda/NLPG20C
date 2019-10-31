@@ -38,8 +38,12 @@ def plot_count(coll : collections.defaultdict(int), title : str, max : int, star
     for e in bars:
         e.set_color(colors[star-1])
 
+    SMALL_SIZE = 8
+    MEDIUM_SIZE = 10
+    BIGGER_SIZE = 12
+
+    plt.rc('axes', labelsize=BIGGER_SIZE)
     plt.title(title)
-    plt.tick_params(axis='x', which='major', labelsize=5)
     #plt.show()
     fig = plt.gcf()
     fig.savefig("".join(title.split(' ')))
@@ -53,4 +57,10 @@ def plot_graph(input_data, title, xlabel, ylabel, image_title):
     plt.title(title)
     plt.xlabel(xlabel)
     plt.ylabel(ylabel)
+
+    SMALL_SIZE = 8
+    MEDIUM_SIZE = 10
+    BIGGER_SIZE = 12
+
+    plt.rc('axes', labelsize=BIGGER_SIZE)
     plt.savefig(image_title)
