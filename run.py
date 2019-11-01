@@ -13,29 +13,29 @@ REVIEWS = load_reviews('reviewSelected100.json')
 # -------------
 
 # Sentence Segmentation
-#Sentences = SentenceSegmentation(REVIEWS)
-#Sentences.sentence_seg()
-#Sentences.plot_sentence_length()
-#Sentences.avg()
+Sentences = SentenceSegmentation(REVIEWS)
+Sentences.sentence_seg()
+Sentences.plot_sentence_length()
+Sentences.avg()
 
 # Tokenization and Stemming
-# Token = Tokenization(REVIEWS)
-# Token.review()
-# Token.common_tokens()
+Token = Tokenization(REVIEWS)
+Token.review()
+Token.common_tokens()
 
 # POS tagging
-#pos_tag(REVIEWS)
+pos_tag(REVIEWS)
 
 # Most frequent adjectives
 # running on single process
-# top10_adj = most_frequent_adj_single(REVIEWS)
-# top10_adj.top10()
+top10_adj = most_frequent_adj_single(REVIEWS)
+top10_adj.top10()
 # to run with multiprocessing, kindly proceed to run directly from the file src/most_frequent_adj.py
 
 # Noun Adjective Pair Summarizer
 # ------------------------------
-#Pairs = PairAdjectiveNounSummarizer(REVIEWS)
-#Pairs.random_5_business()
+Pairs = PairAdjectiveNounSummarizer(REVIEWS)
+Pairs.random_5_business()
 
 # Application
 App = App(REVIEWS)
