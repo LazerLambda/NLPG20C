@@ -1,0 +1,211 @@
+\begin{figure}[!h]
+	\caption{Histograms of the length of the sentences}
+	\includegraphics[scale=0.3]{figures/1stars-Sentencelength.png}
+	\includegraphics[scale=0.3]{figures/2stars-Sentencelength.png}
+	\includegraphics[scale=0.3]{figures/3stars-Sentencelength.png}
+	\includegraphics[scale=0.3]{figures/4stars-Sentencelength.png}
+	\includegraphics[scale=0.3]{figures/5stars-Sentencelength.png}
+\end{figure}
+\newpage
+\begin{figure}[!h]
+	\centering
+	\caption{Distributions of tokens in each review (without stemming)}
+	\includegraphics[scale=0.54]{figures/token_review.png}
+	%\label{fig:tokenized_review}
+\end{figure}
+
+\begin{figure}[!h]
+	\centering
+	\caption{Distributions of tokens in each review (with stemming)}
+	\includegraphics[scale=0.5]{figures/stem_review.png}
+	%\label{fig:stemmed_token_review}
+\end{figure}
+\newpage
+\begin{figure}[!h]
+	\centering
+	\caption{Comparison of the distributions of the tokens with and without stemming}
+	\includegraphics[scale=0.5]{figures/token_stem_review.png}
+	%s\label{fig:stem_and_token_review}
+\end{figure}
+
+\begin{table}[!h]
+	\tiny
+	\centering
+	\caption{20 most common unique tokens}
+	\begin{tabular}{c|c|c}
+		No. & Token & No. of Appearances  \\
+		\hline
+		1 & food & 8580 \\
+		2 & place & 8236 \\
+		3 & good & 7919 \\
+		4 & great & 6295 \\
+		5 & service & 6027 \\
+		6 & like & 5534 \\
+		7 & get & 5216 \\
+		8 & time & 5172 \\
+		9 & would & 5168 \\
+		10 & one & 5044 \\
+		11 & back & 4717 \\
+		12 & go & 4145 \\
+		13 & really & 3731 \\
+		14 & also & 3333 \\
+		15 & got & 3171 \\
+		16 & us & 2926 \\
+		17 & even & 2891 \\
+		18 & order & 2820 \\
+		19 & could & 2815 \\
+		20 & nice & 2756 \\
+	\end{tabular}
+	%\label{tab:most_common_tokens}
+\end{table}
+
+\begin{table}[!h]
+	\tiny
+	\centering
+	\caption{20 most common unique stems}
+	\begin{tabular}{c|c|c}
+		No. & Stem & No. of Appearances  \\
+		\hline
+		1 & place & 9407 \\
+		2 & food & 8731 \\
+		3 & good & 8055 \\
+		4 & time & 6588 \\
+		5 & get & 6390 \\
+		6 & servic & 6338 \\
+		7 & great & 6302 \\
+		8 & like & 6231 \\
+		9 & order & 6150 \\
+		10 & go & 5993 \\
+		11 & one & 5278 \\
+		12 & would & 5168 \\
+		13 & back & 4744 \\
+		14 & tri & 3978 \\
+		15 & come & 3784 \\
+		16 & realli & 3731 \\
+		17 & also & 3333 \\
+		18 & love & 3291 \\
+		19 & got & 3171 \\
+		20 & even & 3160\\
+	\end{tabular}
+	%\label{tab:most_common_stems}
+\end{table}
+\newpage
+\begin{Verbatim}[breaklines=true, breakanywhere=true]
+[('The', 'DT'), ('bubble', 'JJ'), ('tea', 'NN'), ('was', 'VBD'), ('excellent', 'JJ'), ('!', '.'), ('The', 'DT'), ('service', 'NN'), ('however', 'RB'), (',', ','), ('was', 'VBD'), ('not', 'RB'), ('.', '.'), ('I', 'PRP'), ('found', 'VBD'), ('it', 'PRP'), ('pushy', 'VBZ'), (',', ','), ('rushed', 'VBD'), (',', ','), ('abrasive', 'JJ'), (',', ','), ('and', 'CC'), ('incredibly', 'RB'), ('rude', 'VB'), ('.', '.'), ('Their', 'PRP\$'), ('way', 'NN'), ('of', 'IN'), ('dealing', 'VBG'), ('with', 'IN'), ('English', 'NNP'), ('speaking', 'VBG'), ('customers', 'NNS'), ('is', 'VBZ'), ('to', 'TO'), ('bark', 'VB'), ('at', 'IN'), ('them', 'PRP'), ('until', 'IN'), ('they', 'PRP'), ('leave', 'VBP'), ('with', 'IN'), ('their', 'PRP\$'), ('order', 'NN'), ('.', '.'), ('You', 'PRP'), ('certainly', 'RB'), ('wo', 'MD'), ("n't", 'RB'), ('be', 'VB'), ('receiving', 'VBG'), ('any', 'DT'), ('of', 'IN'), ('my', 'PRP\$'), ('money', 'NN'), ('ever', 'RB'), ('again', 'RB'), ('.', '.')]
+\end{Verbatim}
+
+\textit{I love the sketch comedy nights! Food is not so great. Drinks are average prices. Good venue.}\\
+\begin{Verbatim}[breaklines=true, breakanywhere=true] 
+[('I', 'PRP'), ('love', 'VBP'), ('the', 'DT'), ('sketch', 'NN'), ('comedy', 'NN'), ('nights', 'NNS'), ('!', '.'), ('Food', 'NNP'), ('is', 'VBZ'), ('not', 'RB'), ('so', 'RB'), ('great', 'JJ'), ('.', '.'), ('Drinks', 'NNS'), ('are', 'VBP'), ('average', 'JJ'), ('prices', 'NNS'), ('.', '.'), ('Good', 'JJ'), ('venue', 'NN'), ('.', '.')]
+\end{Verbatim}
+
+\textit{This place is inside Baiz Supermarket. If you are in mood of middle eastern food, this is the place. They have the most popular dishes. I highly recommend this place!}\\
+\begin{Verbatim}[breaklines=true, breakanywhere=true] 
+[('This', 'DT'), ('place', 'NN'), ('is', 'VBZ'), ('inside', 'JJ'), ('Baiz', 'NNP'), ('Supermarket', 'NNP'), ('.', '.'), ('If', 'IN'), ('you', 'PRP'), ('are', 'VBP'), ('in', 'IN'), ('mood', 'NN'), ('of', 'IN'), ('middle', 'JJ'), ('eastern', 'JJ'), ('food', 'NN'), (',', ','), ('this', 'DT'), ('is', 'VBZ'), ('the', 'DT'), ('place', 'NN'), ('.', '.'), ('They', 'PRP'), ('have', 'VBP'), ('the', 'DT'), ('most', 'RBS'), ('popular', 'JJ'), ('dishes', 'NNS'), ('.', '.'), ('I', 'PRP'), ('highly', 'RB'), ('recommend', 'VBP'), ('this', 'DT'), ('place', 'NN'), ('!', '.')]
+\end{Verbatim}
+
+\textit{Scheduled manicure and pedicure one day. Came in, was seated and was told to wait. Waited for over 30 minutes, went back to the front desk, they said they forgot about me. I was nice about it, I guess that happenes (not at the good places, but still happens). At the end wasn't even offered a discount... pretty shitty move.}\\
+
+\begin{Verbatim}[breaklines=true, breakanywhere=true] 
+[('Scheduled', 'VBN'), ('manicure', 'NN'), ('and', 'CC'), ('pedicure', 'NN'), ('one', 'CD'), ('day', 'NN'), ('.', '.'), ('Came', 'NN'), ('in', 'IN'), (',', ','), ('was', 'VBD'), ('seated', 'VBN'), ('and', 'CC'), ('was', 'VBD'), ('told', 'VBN'), ('to', 'TO'), ('wait', 'VB'), ('.', '.'), ('Waited', 'VBN'), ('for', 'IN'), ('over', 'IN'), ('30', 'CD'), ('minutes', 'NNS'), (',', ','), ('went', 'VBD'), ('back', 'RB'), ('to', 'TO'), ('the', 'DT'), ('front', 'NN'), ('desk', 'NN'), (',', ','), ('they', 'PRP'), ('said', 'VBD'), ('they', 'PRP'), ('forgot', 'VBD'), ('about', 'IN'), ('me', 'PRP'), ('.', '.'), ('I', 'PRP'), ('was', 'VBD'), ('nice', 'JJ'), ('about', 'IN'), ('it', 'PRP'), (',', ','), ('I', 'PRP'), ('guess', 'VBP'), ('that', 'IN'), ('happenes', 'NNS'), ('(', '('), ('not', 'RB'), ('at', 'IN'), ('the', 'DT'), ('good', 'JJ'), ('places', 'NNS'), (',', ','), ('but', 'CC'), ('still', 'RB'), ('happens', 'VBZ'), (')', ')'), ('.', '.'), ('At', 'IN'), ('the', 'DT'), ('end', 'NN'), ('was', 'VBD'), ("n't", 'RB'), ('even', 'RB'), ('offered', 'VBN'), ('a', 'DT'), ('discount', 'NN'), ('...', ':'), ('pretty', 'RB'), ('shitty', 'JJ'), ('move', 'NN'), ('.', '.')]
+\end{Verbatim}
+
+\textit{I used to love Jukebox but after today's meal, all I can say is "it was nice while it lasted". That was the dryest, most flavorless burger I've ever had. The cook didn't even bother getting the patty all on the bun, but just slapped everything together in a sloppy, careless mess. The fries were way overcooked (it used to come with curly but those are now an extra \$\$). The bun was plain, untoasted and there was no tomato (there was supposed to be). \$18 for overpriced cardboard.}\\
+\begin{Verbatim}[breaklines=true, breakanywhere=true] 
+[('I', 'PRP'), ('used', 'VBD'), ('to', 'TO'), ('love', 'VB'), ('Jukebox', 'NNP'), ('but', 'CC'), ('after', 'IN'), ('today', 'NN'), ("'s", 'POS'), ('meal', 'NN'), (',', ','), ('all', 'DT'), ('I', 'PRP'), ('can', 'MD'), ('say', 'VB'), ('is', 'VBZ'), ('``', '``'), ('it', 'PRP'), ('was', 'VBD'), ('nice', 'RB'), ('while', 'IN'), ('it', 'PRP'), ('lasted', 'VBD'), ("''", "''"), ('.', '.'), ('That', 'DT'), ('was', 'VBD'), ('the', 'DT'), ('dryest', 'JJS'), (',', ','), ('most', 'JJS'), ('flavorless', 'JJ'), ('burger', 'NN'), ('I', 'PRP'), ("'ve", 'VBP'), ('ever', 'RB'), ('had', 'VBN'), ('.', '.'), ('The', 'DT'), ('cook', 'NN'), ('did', 'VBD'), ("n't", 'RB'), ('even', 'RB'), ('bother', 'VB'), ('getting', 'VBG'), ('the', 'DT'), ('patty', 'NN'), ('all', 'DT'), ('on', 'IN'), ('the', 'DT'), ('bun', 'NN'), (',', ','), ('but', 'CC'), ('just', 'RB'), ('slapped', 'VBD'), ('everything', 'NN'), ('together', 'RB'), ('in', 'IN'), ('a', 'DT'), ('sloppy', 'JJ'), (',', ','), ('careless', 'JJ'), ('mess', 'NN'), ('.', '.'), ('The', 'DT'), ('fries', 'NNS'), ('were', 'VBD'), ('way', 'NN'), ('overcooked', 'VBN'), ('(', '('), ('it', 'PRP'), ('used', 'VBD'), ('to', 'TO'), ('come', 'VB'), ('with', 'IN'), ('curly', 'JJ'), ('but', 'CC'), ('those', 'DT'), ('are', 'VBP'), ('now', 'RB'), ('an', 'DT'), ('extra', 'JJ'), ('\$', '\$'), ('\$', '\$'), (')', ')'), ('.', '.'), ('The', 'DT'), ('bun', 'NN'), ('was', 'VBD'), ('plain', 'RB'), (',', ','), ('untoasted', 'JJ'), ('and', 'CC'), ('there', 'EX'), ('was', 'VBD'), ('no', 'DT'), ('tomato', 'NN'), ('(', '('), ('there', 'EX'), ('was', 'VBD'), ('supposed', 'VBN'), ('to', 'TO'), ('be', 'VB'), (')', ')'), ('.', '.'), ('\$', '\$'), ('18', 'CD'), ('for', 'IN'), ('overpriced', 'VBN'), ('cardboard', 'NN'), ('.', '.')]
+\end{Verbatim}
+\newpage
+	\begin{center}
+	\tiny
+	\begin{table}[!h]
+		\caption{Business reviews}
+		\begin{tabular}{c | c}
+			\textbf{Business 1}			&\textbf{Business 2}\\ \hline
+			2xrpo-LXV9uGIwpvy0dwUw		&oLb3-eXUFtCFJl2DuBhcvA\\\hline
+			(('clean', 'car'), 4)		&(('front', 'desk'), 20)\\
+			(('other', 'locations'), 3)		&(('free', 'wifi'), 5)\\
+			(('great', 'job'), 3)		&(('clean', 'room'), 5)\\
+			(('basic', 'wash'), 2)		&(('next', 'day'), 5)\\
+			(('terrible', 'wash'), 2)		&(('next', 'door'), 4)\\
+			(('poor', 'job'), 2)		&(('light', 'sleeper'), 4)\\
+			(('high', 'pressure'), 2)		&(('rental', 'car'), 3)\\
+			(('terrible', 'job'), 2)		&(('friendly', 'staff'), 3)\\
+			(('helpful', 'guy'), 2)		&(('comfortable', 'bed'), 3)\\
+			(('horrible', 'service'), 2)		&(('great', 'breakfast'), 3)\\
+			(('bad', 'service'), 2)		&(('hot', 'food'), 3)\\
+			(('worth', 'place'), 2)		&(('free', 'breakfast'), 3)\\
+			(('different', 'options'), 2)		&(('continental', 'breakfast'), 3)\\
+			(('only', 'place'), 2)		&(('clean', 'rooms'), 3)\\
+			(('friendly', 'staff'), 2)		&(('new', 'room'), 3)\\
+			(('terrible', 'service'), 2)		&(('next', 'morning'), 3)\\
+			(('horrible', 'smell'), 2)		&(('complimentary', 'breakfast'), 3)\\
+			(('happy', 'camper'), 2)		&(('free', 'shuttle'), 3)\\
+			(('classic', 'wash'), 2)		&(('first', 'night'), 3)\\
+			(('synthetic', 'change'), 2)		&(('first', 'day'), 2)\\
+		\end{tabular}
+	\end{table}
+\end{center}
+\begin{center}
+	\tiny
+	\begin{table}[!h]
+		\caption{Restaurant reviews}
+		\begin{tabular}{c | c | c}
+			\textbf{Business 3}			&\textbf{Business 4}				&\textbf{Business 5}	\\\hline
+			R4EhR8xhONLFqqI6ZnzNWw		&c1\char`_adyjYG6JEa1PZAXMOBg		&DcfkRb2bS2c8z21WH-aS6A\\\hline
+			(('good', 'dumpling'), 8)		&(('south', 'indian'), 14)		&(('carne', 'asada'), 13)\\
+			(('good', 'food'), 8)		&(('indian', 'food'), 14)		&(('mexican', 'food'), 5)\\
+			(('korean', 'food'), 7)		&(('indian', 'restaurant'), 5)		&(('free', 'chips'), 4)\\
+			(('korean', 'dishes'), 7)		&(('other', 'places'), 4)		&(('great', 'place'), 4)\\
+			(('steamed', 'dumplings'), 6)		&(('first', 'time'), 4)		&(('authentic', 'food'), 3)\\
+			(('chinese', 'food'), 5)		&(('friendly', 'staff'), 4)		&(('red', 'sauce'), 3)\\
+			(('chinese', 'dumplings'), 4)		&(('good', 'food'), 4)		&(('mexican', 'restaurants'), 3)\\
+			(('chinese', 'cuisine'), 4)		&(('first', 'experience'), 3)		&(('good', 'food'), 3)\\
+			(('korean', 'soup'), 4)		&(('high', 'price'), 3)		&(('friendly', 'staff'), 3)\\
+			(('great', 'service'), 4)		&(('second', 'time'), 3)		&(('best', 'food'), 3)\\
+			(('fried', 'pork'), 4)		&(('indian', 'buffet'), 3)		&(('little', 'flavor'), 2)\\
+			(('huge', 'fan'), 3)		&(('great', 'taste'), 2)		&(('toasted', 'bread'), 2)\\
+			(('cheap', 'food'), 3)		&(('crispy', 'dosa'), 2)		&(('iced', 'tea'), 2)\\
+			(('awesome', 'dumpling'), 3)		&(('last', 'night'), 2)		&(('reasonable', 'price'), 2)\\
+			(('fresh', 'noodle'), 3)		&(('indian', 'place'), 2)		&(('many', 'restaurants'), 2)\\
+			(('north', 'korean'), 3)		&(('great', 'place'), 2)		&(('many', 'people'), 2)\\
+			(('other', 'dishes'), 3)		&(('delicious', 'food'), 2)		&(('good', 'salsa'), 2)\\
+			(('fried', 'rice'), 3)		&(('decent', 'reviews'), 2)		&(('great', 'tacos'), 2)\\
+			(('hidden', 'gem'), 3)		&(('indian', 'cuisine'), 2)		&(('good', 'taco'), 2)\\
+			(('northern', 'chinese'), 3)		&(('tasty', 'food'), 2)		&(('favorite', 'place'), 2)\\
+			
+		\end{tabular}
+	\end{table}
+\end{center}
+\newpage
+\begin{table}[!h]
+	\centering
+	\tiny
+	\caption{Application result}
+	\begin{tabular}{c|c}
+		\hline
+		\multicolumn{2}{c}{Business ID: daqYMX3Y4QR8xl-BUlYBPw}\\
+		\multicolumn{2}{c}{ }\\
+		\hline
+		Good features &'fresh fruit': 5, 'great service': 3, 'great bread': 2,\\
+		&'fresh avocado': 2, 'good torta': 2, 'delicious food': 2,\\
+		&'great food': 2, 'good food': 2, 'great variety': 1,\\
+		&'tasty sandwich': 1, 'tasty pan': 1, 'fine dining': 1,\\
+		&'great value': 1, 'friendly place': 1, 'delicious pork': 1,\\
+		&'fresh salad': 1, 'excellent staff': 1, 'good value': 1,\\
+		&'good sandwich': 1, 'nice tang': 1, 'wonderful quesadilla': 1,\\
+		&'great torta/taco': 1, 'wonderful stuff': 1, 'good fun': 1,\\
+		&'good variety': 1, 'good quality': 1, 'great atmosphere': 1,\\
+		&'good sign': 1, 'good flavor': 1, 'great family': 1,\\
+		&'excellent food': 1, 'good nonetheless': 1, 'great place': 1,\\
+		&'delicious tomato': 1, 'fresh cream': 1, 'awesome service': 1,\\
+		&'excellent breakfast': 1, 'delicious chicken': 1,\\
+		&'friendly service': 1, 'fresh avacado': 1, 'great flavor': 1\\
+		&\\
+		\hline
+		Bad features &'service was not great': 1, 'bad one': 1,\\
+		&'wrong order': 1, 'are now no good': 1, 'poor job': 1\\
+		&\\
+		\hline
+		
+	\end{tabular}
+\end{table}

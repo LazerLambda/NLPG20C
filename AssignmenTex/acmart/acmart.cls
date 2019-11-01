@@ -1204,8 +1204,7 @@
   \global\@ACM@journal@bibstripfalse
 }
 \if@ACM@journal\else
-\acmConference[Conference'17]{ACM Conference}{July 2017}{Washington,
-  DC, USA}%
+\acmConference[]{NLP}{CZ4045}{Dr. Sun Aixin}%
 \fi
 \def\acmBooktitle#1{\gdef\@acmBooktitle{#1}}
 \acmBooktitle{Proceedings of \acmConference@name
@@ -1532,164 +1531,10 @@
 \setcopyright{acmcopyright}
 \def\@copyrightowner{%
   \ifcase\acm@copyrightmode\relax % none
-  \or % acmcopyright
-  Association for Computing Machinery.
-  \or % acmlicensed
-  Copyright held by the owner/author(s). Publication rights licensed to
-  ACM\@.
-  \or % rightsretained
-  Copyright held by the owner/author(s).
-  \or % usgov
-  \or % usgovmixed
-  Association for Computing Machinery.
-  \or % cagov
-  Crown in Right of Canada.
-  \or %cagovmixed
-  Association for Computing Machinery.
-  \or %licensedusgovmixed
-  Copyright held by the owner/author(s). Publication rights licensed to
-  ACM\@.
-  \or % licensedcagov
-  Crown in Right of Canada. Publication rights licensed to
-  ACM\@.
-  \or %licensedcagovmixed
-  Copyright held by the owner/author(s). Publication rights licensed to
-  ACM\@.
-  \or % othergov
-  Association for Computing Machinery.
-  \or % licensedothergov
-  Copyright held by the owner/author(s). Publication rights licensed to
-  ACM\@.
-  \or % ic2w3www
-  IW3C2 (International World Wide Web Conference Committee), published
-  under Creative Commons CC-BY~4.0 License.
-  \or % ic2w3wwwgoogle
-  IW3C2 (International World Wide Web Conference Committee), published
-  under Creative Commons CC-BY-NC-ND~4.0 License.
   \fi}
 \def\@formatdoi#1{\url{https://doi.org/#1}}
 \def\@copyrightpermission{%
   \ifcase\acm@copyrightmode\relax % none
-  \or % acmcopyright
-   Permission to make digital or hard copies of all or part of this
-   work for personal or classroom use is granted without fee provided
-   that copies are not made or distributed for profit or commercial
-   advantage and that copies bear this notice and the full citation on
-   the first page. Copyrights for components of this work owned by
-   others than ACM must be honored. Abstracting with credit is
-   permitted. To copy otherwise, or republish, to post on servers or to
-   redistribute to lists, requires prior specific permission
-   and\hspace*{.5pt}/or  a fee. Request permissions from
-   permissions@acm.org.
-  \or % acmlicensed
-   Permission to make digital or hard copies of all or part of this
-   work for personal or classroom use is granted without fee provided
-   that copies are not made or distributed for profit or commercial
-   advantage and that copies bear this notice and the full citation on
-   the first page. Copyrights for components of this work owned by
-   others than the author(s) must be honored. Abstracting with credit
-   is permitted.  To copy otherwise, or republish, to post on servers
-   or to  redistribute to lists, requires prior specific permission
-   and\hspace*{.5pt}/or  a fee. Request permissions from
-   permissions@acm.org.
-  \or % rightsretained
-   Permission to make digital or hard copies of part or all of this work
-   for personal or classroom use is granted without fee provided that
-   copies are not made or distributed for profit or commercial advantage
-   and that copies bear this notice and the full citation on the first
-   page. Copyrights for third-party components of this work must be
-   honored. For all other uses, contact the
-   owner\hspace*{.5pt}/author(s).
-  \or % usgov
-   This paper is authored by an employee(s) of the United States
-   Government and is in the public domain. Non-exclusive copying or
-   redistribution is allowed, provided that the article citation is
-   given and the authors and agency are clearly identified as its
-   source.
-  \or % usgovmixed
-   ACM acknowledges that this contribution was authored or co-authored
-   by an employee, contractor, or affiliate of the United States government. As such,
-   the United States government retains a nonexclusive, royalty-free right to
-   publish or reproduce this article, or to allow others to do so, for
-   government purposes only.
-  \or % cagov
-   This article was authored by employees of the Government of Canada.
-   As such, the Canadian government retains all interest in the
-   copyright to this work and grants to ACM a nonexclusive,
-   royalty-free right to publish or reproduce this article, or to allow
-   others to do so, provided that clear attribution is given both to
-   the authors and the Canadian government agency employing them.
-   Permission to make digital or hard copies for personal or classroom
-   use is granted. Copies must bear this notice and the full citation
-   on the first page.  Copyrights for components of this work owned by
-   others than the Canadian Government must be honored. To copy
-   otherwise, distribute, republish, or post, requires prior specific
-   permission and\hspace*{.5pt}/or a fee. Request permissions from
-   permissions@acm.org.
-  \or % cagovmixed
-   ACM acknowledges that this contribution was co-authored by an
-   affiliate of the national government of Canada. As such, the Crown
-   in Right of Canada retains an equal interest in the copyright.
-   Reprints must include clear attribution to ACM and the author's
-   government agency affiliation.  Permission to make digital or hard
-   copies for personal or classroom use is granted.  Copies must bear
-   this notice and the full citation on the first page. Copyrights for
-   components of this work owned by others than ACM must be honored.
-   To copy otherwise, distribute, republish, or post, requires prior
-   specific permission and\hspace*{.5pt}/or a fee. Request permissions
-   from permissions@acm.org.
-  \or % licensedusgovmixed
-   Publication rights licensed to ACM\@. ACM acknowledges that this
-   contribution was authored or co-authored by an employee, contractor
-   or affiliate of the United States government. As such, the
-   Government retains a nonexclusive, royalty-free right to publish or
-   reproduce this article, or to allow others to do so, for Government
-   purposes only.
-  \or % licensedcagov
-   This article was authored by employees of the Government of Canada.
-   As such, the Canadian government retains all interest in the
-   copyright to this work and grants to ACM a nonexclusive,
-   royalty-free right to publish or reproduce this article, or to allow
-   others to do so, provided that clear attribution is given both to
-   the authors and the Canadian government agency employing them.
-   Permission to make digital or hard copies for personal or classroom
-   use is granted. Copies must bear this notice and the full citation
-   on the first page.  Copyrights for components of this work owned by
-   others than the Canadian Government must be honored. To copy
-   otherwise, distribute, republish, or post, requires prior specific
-   permission and\hspace*{.5pt}/or a fee. Request permissions from
-   permissions@acm.org.
-  \or % licensedcagovmixed
-   Publication rights licensed to ACM\@. ACM acknowledges that this
-   contribution was authored or co-authored by an employee, contractor
-   or affiliate of the national government of Canada. As such, the
-   Government retains a nonexclusive, royalty-free right to publish or
-   reproduce this article, or to allow others to do so, for Government
-   purposes only.
-  \or % othergov
-   ACM acknowledges that this contribution was authored or co-authored
-   by an employee, contractor or affiliate of a national government. As
-   such, the Government retains a nonexclusive, royalty-free right to
-   publish or reproduce this article, or to allow others to do so, for
-   Government purposes only.
-  \or % licensedothergov
-   Publication rights licensed to ACM\@. ACM acknowledges that this
-   contribution was authored or co-authored by an employee, contractor
-   or affiliate of a national government. As such, the Government
-   retains a nonexclusive, royalty-free right to publish or reproduce
-   this article, or to allow others to do so, for Government purposes
-   only.
- \or % iw3c2w3
-   This paper is published under the Creative Commons Attribution~4.0
-   International (CC-BY~4.0) license. Authors reserve their rights to
-   disseminate the work on their personal and corporate Web sites with
-   the appropriate attribution.
- \or % iw3c2w3g
-   This paper is published under the Creative Commons
-   Attribution-NonCommercial-NoDerivs~4.0 International
-   (CC-BY-NC-ND~4.0) license. Authors reserve their rights to
-   disseminate the work on their personal and corporate Web sites with
-   the appropriate attribution.
  \fi}
 \def\copyrightyear#1{\def\@copyrightyear{#1}}
 \copyrightyear{\@acmYear}
@@ -1756,11 +1601,6 @@
          {\itshape \acmConference@shortname, \acmConference@date, \acmConference@venue}\par
        \fi
     \fi
-    \if@printcopyright
-      \copyright\ \@copyrightyear\ \@copyrightowner\\
-    \else
-      \@copyrightyear.\
-    \fi
     \if@ACM@manuscript
       Manuscript submitted to ACM\\
     \else
@@ -1781,14 +1621,8 @@
         \else
           \if@ACM@nonacm\else
             \if@ACM@journal@bibstrip
-              \@permissionCodeOne/\@acmYear/\@acmMonth-ART\@acmArticle
-              \ifx\@acmPrice\@empty\else\ \$\@acmPrice\fi\\
-              \@formatdoi{\@acmDOI}%
-            \else % Conference
-              \ifx\@acmISBN\@empty\else ACM~ISBN~\@acmISBN
-              \ifx\@acmPrice\@empty.\else\dots\$\@acmPrice\fi\\\fi
-              \ifx\@acmDOI\@empty\else\@formatdoi{\@acmDOI}\fi%
-            \fi
+              \relax
+             \fi
           \fi
         \fi
       \fi}

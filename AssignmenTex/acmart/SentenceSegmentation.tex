@@ -1,4 +1,16 @@
-For the sentence segmentation we used the library spacy. Each category is displayed in figure 1. The x-axis is shows the length of a review in number of sentences, and the y-axis shows the total number of reviews of such length. 
+For the sentence segmentation we used the spacy library, also the collections library for the counting and matplotlib for the figures . Each category is displayed in figure 1. The x-axis is shows the length of a review in number of sentences, and the y-axis shows the total number of reviews of such length.\\
+\begin{Verbatim}
+def __init__(self, reviews : list) -> ():
+	...
+	self.nlp = en_core_web_sm.load()
+...
+# Sentence Segmentation
+ret_dict = collections.defaultdict(int)
+	for elem in text:
+		doc = self.nlp(elem['text'])
+		length = len(list(doc.sents))
+		ret_dict[length] = ret_dict[length] + 1
+\end{Verbatim}
 	\begin{center}
 		\begin{table}[!h]
 			\caption{Average length of the sentences in the different star categories}

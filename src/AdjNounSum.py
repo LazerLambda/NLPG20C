@@ -43,13 +43,24 @@ class PairAdjectiveNounSummarizer:
                 pair = None
 
                 # the case that the adjective is a direct amod
-                if token.dep_ == 'amod':
-                    pair = ( token.text.lower(), token.head.text.lower() )
-                    pairs.append(pair)
+                if token.dep_ == 'amod' and token.pos_ == "ADJ":
+                    if token.head.pos_ == 'NOUN':
+
+                        # lemmatize the tokens
+                        if token.head.lemma_ == '-PRON-':
+                            pair = ( token.lemma_.lower(), e.text.lower() )
+                        else:
+                            pair = ( 
+                                token.lemma_.lower(), 
+                                token.head.lemma_.lower() 
+                                )
+                        pairs.append(pair)
 
                 # the case that the adjective is a adj complement
-                if token.dep_ == 'acomp':
-                    noun = [e for e in token.head.children if e.dep_ == "nsubj"]
+                if token.dep_ == 'acomp' and token.pos_ == "ADJ":
+                    noun = [
+                        e for e in token.head.children if e.dep_ == "nsubj"
+                        ]
                     if noun:
                         for e in noun:
 
@@ -63,9 +74,8 @@ class PairAdjectiveNounSummarizer:
                             else:
                                 pair = ( token.lemma_.lower(), e.lemma_.lower() )
                             pairs.append(pair)
-                
-                
-        observations = collections.Counter(pairs)#collections.defaultdict(int)
+
+        observations = collections.Counter(pairs)
         print("Results %s" % name)
         print(observations.most_common(20))
         print("\n\n")

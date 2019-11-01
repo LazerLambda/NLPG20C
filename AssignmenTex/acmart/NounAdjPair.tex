@@ -1,17 +1,47 @@
 The results are displayed in Table 5 and Table 6.
 \subsection{Approach}
 For the extraction of the Noun-Adjectives, we used a dependency-grammar approach. In dependency grammar, adjectives are labeled as 'amod' for sentences like "... bad service ..." while in the case of Adjectives in sentences like "... the service at ... is bad ...", the adjectives are labeled as 'acomp'. With this labels we were able to identify the adjectives. For the nouns we searched the dependency tree of the parent node of the adjective for 
-the 'nsubj' relation. All of these relations were being stored in an array. After another check of the POS-Tag of the collected 'nsubj' relations, we were able to write the ADJ-NOUN Tuples to the final array. Before the adding we lemmatized the words so we can have more accurate number of the used words in the final. We decided to do so since our corpus is to small to distinct between different tenses and therefore increasing the accuracy for the summary of the used adjectives and nouns. The lemmatization was done after the Adjective and Noun were identified For the research we looked at the top twenty appearing pairs.
-In the results we were able to see some characteritics of the reviewed business. It  was possible for example, to make an assumption about the business of the following review:
+the 'nsubj' relation. All of these relations were being stored in an array. After another check of the POS-Tag of the collected 'nsubj' relations, we were able to write the ADJ-NOUN Tuples to the final array. Before the adding we lemmatized the words so we can have more accurate number of the used words in the final. We decided to do so since our corpus is to small to distinct between different tenses and therefore increasing the accuracy for the summary of the used adjectives and nouns. The lemmatization was done after the Adjective and Noun were identified For the research we looked at the top twenty appearing pairs.\\
+\begin{Verbatim}[fontsize=\tiny]
+# the case that the adjective is a direct amod
+if token.dep_ == 'amod' and token.pos_ == "ADJ":
+	if token.head.pos_ == 'NOUN':
 
-After reviewing Business 2 (oLb3-eXUFtCFJl2DuBhcvA)  we were able to assume, that the review describes an hotel. Some other reviews also indicated the sector of the business. 
-It was also possible to identify the kind of food which is served in some restaurants, like mexican, vietnamese or chinese for example.
+		# lemmatize the tokens
+		if token.head.lemma_ == '-PRON-':
+			pair = ( token.lemma_.lower(), e.text.lower() )
+		else:
+			pair = ( 
+				token.lemma_.lower(), 
+				token.head.lemma_.lower() 
+				)
+		pairs.append(pair)
+
+# the case that the adjective is a adj complement
+if token.dep_ == 'acomp' and token.pos_ == "ADJ":
+	noun = [
+		e for e in token.head.children if e.dep_ == "nsubj"
+		]
+	if noun:
+		for e in noun:
+
+		# skip non nouns
+		if not e.pos_ == 'NOUN':
+		continue
+
+		# lemmatize the tokens
+		if e.lemma_ == '-PRON-':
+			pair = ( token.lemma_.lower(), e.text.lower() )
+		else:
+			pair = ( token.lemma_.lower(), e.lemma_.lower() )
+			pairs.append(pair)
+\end{Verbatim}
 \subsection{Analysis}
-After reviewing a few reviews on Business 1, it became obvious, that this business is a car wash. The reviews were mixed, some criticized alot and other reviews were mentioning the good result. \\
+The pairs created for Business 2 are indicating already the sector of the company. Pairs like ('clean', 'car'), ('basic', 'wash') or ('classic', 'wash') are signs, that we are dealing with the reviews of a car wash here. After reviewing the reviews, it became more obvious, that the opinions are mixed about this business. Costumers mentioned bad service, which is also indicated by the determined pairs, like ('poor', 'job'), ('terrible', 'job') or ('bad', 'service'). In contrast, there were also some good reviews about this business, which also came up in the pairs. The most common pair is, for example, ('clean', 'car'), which indicates a good service. In total the results are satisfying, since most of the pairs are providing useful information. The only exception here is ('high', 'pressure') which is too ambiguous.\\
 Business 2 was also a non restaurant business. The noun-adjective pairs such as (‘front’,’desk’), (‘free’,’wifi’), (‘rental’, ‘car’), (‘complimentary’, ‘breakfast’) suggest that the reviews are about an hotel which is true. We also get a general idea from the pairs that the staff, breakfast as well as the facilities are decent which is also true from reading the reviews. Apart from some complaints here and there in the reviews, the guests generally liked the hotel and its free shuttle service. However, some pairs like (‘light’, ‘sleeper’) is useless as it talks about the guest. Also, (‘next’, ‘day’) and (‘first’, ‘day’) occur frequently which does not give us any info.\\
 As for Business 3, most reviews spoke great of the dumplings as well as the food, which are the 2 most frequent noun-adjective pairs. Hence, those are accurate. As from the reviews, it is given that the restaurant has a mix of Korean as well as Northern-Chinese dishes which is also something that can be rightly perceived from the frequent noun-adjective pairs obtained, e.g, (‘korean’, ‘food’), (‘korean’, ‘dishes’), (‘chinese’, ‘cuisine’), etc. Fried pork and fried rice are some of the dishes that are sold in the restaurant that people talked of in the reviews. Most reviews talk of how bad the service is. Apparently, the management and staff is not friendly, and the food is brought in quite slowly. This is in contradiction with one of the noun-adjective pairs that we got ((‘great’), (‘service’)).  Perhaps, the noun-adjective pair could not comprehend the meaning of the sentences where service and great would appear together. These are some sentences quoted from the reviews: “If you are expecting great service, this the wrong place for you”, “but service is not so great”.  Therefore, when extracting noun-adjective pairs for these sentences, we obtain (‘great’), (‘service’), although the expression of the sentence is actually negative.\\
 Business 4 represents a South Indian restaurant with a buffet set-up. Hence, the first three most frequent adj-noun pairs correctly summarizes the nature of the restaurant and the kind of food being served in the restaurant. Noun-adj pairs like (‘first’, ‘time’) do not hold much importance in the feedback of the restaurant but (‘second’, ‘time’) can refer to customers wanting to come back which speaks good of the restaurant. Besides, this is quite true because there are quite a few reviews that talks about customers wanting to give it another try. Most reviews also speak good of the staff as given by the (‘friendly’, ‘staff’) pair. Most spoken of food item is the dosa and that’s also given as one of the noun-adjective pairs. On the whole, the frequent noun-adjective pairs obtained give an accurate response of the restaurant.\\
-For business 5 we found 4 good reviews and 1 bad review. It seems like busines 5 is a mexican restaurant, which is also indicated by the ('mexican', 'restaurants'), 3)- Pair. We also found the pair ('carne', 'asada'), 13) as "carne asada" in the reviews again.\\
+For business 5, the determined pairs are providing useful information whereby we don't have pairs related to time. Since the second most  often pair is ('mexican', 'food') and the another pair is ('mexican', 'restaurant'), we can easy infer, that this business is a mexican restaurant. The inspection of the reviews proofed this assumption. Most of these reviews were positive towards the business. Determined paris like ('great', 'place'), ('authentic','food') or ('best','food') emphasizing this observation. Since there are many specific dishes being mentioned, the reviews are very particular. There are pairs like ('carne', 'asada'), ('toasted', 'bread') and ('iced', 'tea') which mention this particulars. The generated pairs for Business 5 are very unambiguous, such that all pairs can be used to retrieve information.
 	
 	\begin{center}
 		\tiny
