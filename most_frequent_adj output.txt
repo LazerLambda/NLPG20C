@@ -8,343 +8,426 @@ Number of reviews with rating star 4.0 :  3559
 
 Number of reviews with rating star 5.0 :  6159
 
-5.0 rating review # 0 , time lapsed: 170.20842671394348
+2.0 rating review # 0 , time lapsed: 169.5305678844452
 
-2.0 rating review # 0 , time lapsed: 170.54652214050293
+5.0 rating review # 0 , time lapsed: 169.64725494384766
 
-4.0 rating review # 0 , time lapsed: 170.97437739372253
+4.0 rating review # 0 , time lapsed: 169.96939325332642
 
-3.0 rating review # 0 , time lapsed: 171.36734557151794
+3.0 rating review # 0 , time lapsed: 170.82410788536072
 
-1.0 rating review # 0 , time lapsed: 172.61301469802856
+1.0 rating review # 0 , time lapsed: 173.5787389278412
 
-5.0 rating review # 100 , time lapsed: 242.75946426391602
+5.0 rating review # 100 , time lapsed: 249.75499606132507
 
-3.0 rating review # 100 , time lapsed: 298.9741623401642
+3.0 rating review # 100 , time lapsed: 302.03017807006836
 
-5.0 rating review # 200 , time lapsed: 326.3539574146271
+5.0 rating review # 200 , time lapsed: 326.5735352039337
 
-4.0 rating review # 100 , time lapsed: 337.54603242874146
+4.0 rating review # 100 , time lapsed: 343.52918434143066
 
-2.0 rating review # 100 , time lapsed: 365.8673098087311
+2.0 rating review # 100 , time lapsed: 365.9562318325043
 
-1.0 rating review # 100 , time lapsed: 375.12655425071716
+1.0 rating review # 100 , time lapsed: 379.3344190120697
 
-5.0 rating review # 300 , time lapsed: 418.5783772468567
+5.0 rating review # 300 , time lapsed: 424.50560188293457
 
-3.0 rating review # 200 , time lapsed: 440.4758303165436
+3.0 rating review # 200 , time lapsed: 444.6866247653961
 
-4.0 rating review # 200 , time lapsed: 446.14367508888245
+4.0 rating review # 200 , time lapsed: 461.60537338256836
 
-5.0 rating review # 400 , time lapsed: 484.55298113822937
+5.0 rating review # 400 , time lapsed: 496.43222403526306
 
-1.0 rating review # 200 , time lapsed: 486.58853816986084
+1.0 rating review # 200 , time lapsed: 502.05022716522217
 
-4.0 rating review # 300 , time lapsed: 519.0038688182831
+4.0 rating review # 300 , time lapsed: 542.3583879470825
 
-2.0 rating review # 200 , time lapsed: 538.966495513916
+2.0 rating review # 200 , time lapsed: 553.426784992218
 
-5.0 rating review # 500 , time lapsed: 551.4740543365479
+5.0 rating review # 500 , time lapsed: 569.064957857132
 
-3.0 rating review # 300 , time lapsed: 561.6807646751404
+3.0 rating review # 300 , time lapsed: 575.8468194007874
 
-4.0 rating review # 400 , time lapsed: 632.1573305130005
+1.0 rating review # 300 , time lapsed: 665.1020936965942
 
-1.0 rating review # 300 , time lapsed: 634.222808599472
+2.0 rating review # 300 , time lapsed: 667.7151062488556
 
-2.0 rating review # 300 , time lapsed: 643.5209481716156
+4.0 rating review # 400 , time lapsed: 668.7742953300476
 
-5.0 rating review # 600 , time lapsed: 666.262145280838
+5.0 rating review # 600 , time lapsed: 694.005809545517
 
-5.0 rating review # 700 , time lapsed: 718.5284023284912
+5.0 rating review # 700 , time lapsed: 750.1226940155029
 
-4.0 rating review # 500 , time lapsed: 732.1300332546234
+3.0 rating review # 400 , time lapsed: 775.5217607021332
 
-3.0 rating review # 400 , time lapsed: 746.7489478588104
+4.0 rating review # 500 , time lapsed: 780.8056545257568
 
-5.0 rating review # 800 , time lapsed: 779.9830894470215
+5.0 rating review # 800 , time lapsed: 817.3608908653259
 
-2.0 rating review # 400 , time lapsed: 806.0972683429718
+2.0 rating review # 400 , time lapsed: 846.2296433448792
 
-1.0 rating review # 400 , time lapsed: 810.4037539958954
+1.0 rating review # 400 , time lapsed: 859.048357963562
 
-3.0 rating review # 500 , time lapsed: 859.6839935779572
+3.0 rating review # 500 , time lapsed: 899.5639932155609
 
-4.0 rating review # 600 , time lapsed: 877.1921803951263
+5.0 rating review # 900 , time lapsed: 940.459611415863
 
-5.0 rating review # 900 , time lapsed: 892.2798421382904
+4.0 rating review # 600 , time lapsed: 942.3545424938202
 
-1.0 rating review # 500 , time lapsed: 960.7776992321014
+1.0 rating review # 500 , time lapsed: 1027.878796339035
 
-4.0 rating review # 700 , time lapsed: 976.7400195598602
+5.0 rating review # 1000 , time lapsed: 1046.0910859107971
 
-5.0 rating review # 1000 , time lapsed: 983.003274679184
+3.0 rating review # 600 , time lapsed: 1059.3007543087006
 
-3.0 rating review # 600 , time lapsed: 999.4562842845917
+4.0 rating review # 700 , time lapsed: 1061.5686886310577
 
-2.0 rating review # 500 , time lapsed: 1019.2713050842285
+2.0 rating review # 500 , time lapsed: 1087.1452803611755
 
-5.0 rating review # 1100 , time lapsed: 1060.30060505867
+5.0 rating review # 1100 , time lapsed: 1133.2838768959045
 
-4.0 rating review # 800 , time lapsed: 1120.9803647994995
+3.0 rating review # 700 , time lapsed: 1226.8496220111847
 
-1.0 rating review # 600 , time lapsed: 1134.445363998413
+1.0 rating review # 600 , time lapsed: 1227.5268113613129
 
-3.0 rating review # 700 , time lapsed: 1144.9313282966614
+4.0 rating review # 800 , time lapsed: 1230.023133277893
 
-5.0 rating review # 1200 , time lapsed: 1159.7277669906616
+5.0 rating review # 1200 , time lapsed: 1248.1376838684082
 
-2.0 rating review # 600 , time lapsed: 1187.4037690162659
+2.0 rating review # 600 , time lapsed: 1281.7671937942505
 
-5.0 rating review # 1300 , time lapsed: 1244.527039051056
+5.0 rating review # 1300 , time lapsed: 1354.068811416626
 
-4.0 rating review # 900 , time lapsed: 1252.4239239692688
+3.0 rating review # 800 , time lapsed: 1369.8316521644592
 
-3.0 rating review # 800 , time lapsed: 1262.4969925880432
+4.0 rating review # 900 , time lapsed: 1394.3022012710571
 
-1.0 rating review # 700 , time lapsed: 1302.5179884433746
+1.0 rating review # 700 , time lapsed: 1428.6373674869537
 
-5.0 rating review # 1400 , time lapsed: 1325.9662952423096
+5.0 rating review # 1400 , time lapsed: 1448.8383631706238
 
-4.0 rating review # 1000 , time lapsed: 1350.2174537181854
+4.0 rating review # 1000 , time lapsed: 1508.8747618198395
 
-2.0 rating review # 700 , time lapsed: 1389.6041462421417
+2.0 rating review # 700 , time lapsed: 1522.7057700157166
 
-5.0 rating review # 1500 , time lapsed: 1436.5975003242493
+5.0 rating review # 1500 , time lapsed: 1574.7535598278046
 
-3.0 rating review # 900 , time lapsed: 1467.1587886810303
+3.0 rating review # 900 , time lapsed: 1604.2177546024323
 
-1.0 rating review # 800 , time lapsed: 1483.7693767547607
+1.0 rating review # 800 , time lapsed: 1638.938916683197
 
-4.0 rating review # 1100 , time lapsed: 1497.6971373558044
+5.0 rating review # 1600 , time lapsed: 1655.5883560180664
 
-5.0 rating review # 1600 , time lapsed: 1504.9816617965698
+4.0 rating review # 1100 , time lapsed: 1681.3574647903442
 
-2.0 rating review # 800 , time lapsed: 1540.5346031188965
+2.0 rating review # 800 , time lapsed: 1698.3948638439178
 
-3.0 rating review # 1000 , time lapsed: 1576.4645380973816
+3.0 rating review # 1000 , time lapsed: 1731.951153755188
 
-4.0 rating review # 1200 , time lapsed: 1584.3913428783417
+5.0 rating review # 1700 , time lapsed: 1775.7948474884033
 
-5.0 rating review # 1700 , time lapsed: 1607.4058103561401
+4.0 rating review # 1200 , time lapsed: 1785.7232918739319
 
-5.0 rating review # 1800 , time lapsed: 1654.368246793747
+5.0 rating review # 1800 , time lapsed: 1831.003184556961
 
-2.0 rating review # 900 , time lapsed: 1676.964830160141
+2.0 rating review # 900 , time lapsed: 1856.9178731441498
 
-4.0 rating review # 1300 , time lapsed: 1677.5672190189362
+3.0 rating review # 1100 , time lapsed: 1876.2222409248352
 
-3.0 rating review # 1100 , time lapsed: 1700.1259047985077
+4.0 rating review # 1300 , time lapsed: 1898.0348994731903
 
-1.0 rating review # 900 , time lapsed: 1723.3049306869507
+1.0 rating review # 900 , time lapsed: 1918.75448179245
 
-4.0 rating review # 1400 , time lapsed: 1751.2951097488403
+5.0 rating review # 2000 , time lapsed: 1971.2700204849243
 
-5.0 rating review # 2000 , time lapsed: 1775.6300468444824
+4.0 rating review # 1400 , time lapsed: 1985.2825434207916
 
-2.0 rating review # 1000 , time lapsed: 1795.3882191181183
+2.0 rating review # 1000 , time lapsed: 1992.221982717514
 
-5.0 rating review # 2100 , time lapsed: 1825.7530331611633
+5.0 rating review # 2100 , time lapsed: 2029.2379786968231
 
-4.0 rating review # 1500 , time lapsed: 1833.7606220245361
+3.0 rating review # 1200 , time lapsed: 2029.502310037613
 
-3.0 rating review # 1200 , time lapsed: 1834.0767776966095
+4.0 rating review # 1500 , time lapsed: 2080.9915907382965
 
-5.0 rating review # 2200 , time lapsed: 1891.6348848342896
+5.0 rating review # 2200 , time lapsed: 2093.116127729416
 
-3.0 rating review # 1300 , time lapsed: 1945.0580477714539
+3.0 rating review # 1300 , time lapsed: 2146.5561950206757
 
-1.0 rating review # 1000 , time lapsed: 1951.0360634326935
+1.0 rating review # 1000 , time lapsed: 2170.8522107601166
 
-2.0 rating review # 1100 , time lapsed: 1971.1054043769836
+2.0 rating review # 1100 , time lapsed: 2182.6616258621216
 
-5.0 rating review # 2300 , time lapsed: 1985.6006486415863
+5.0 rating review # 2300 , time lapsed: 2201.730621576309
 
-4.0 rating review # 1600 , time lapsed: 1985.9088234901428
+4.0 rating review # 1600 , time lapsed: 2251.2322251796722
 
-5.0 rating review # 2400 , time lapsed: 2039.4457178115845
+3.0 rating review # 1400 , time lapsed: 2261.6294162273407
 
-3.0 rating review # 1400 , time lapsed: 2049.2135672569275
+5.0 rating review # 2400 , time lapsed: 2262.083202123642
 
-1.0 rating review # 1100 , time lapsed: 2110.348706007004
+1.0 rating review # 1100 , time lapsed: 2345.4063432216644
 
-5.0 rating review # 2500 , time lapsed: 2124.3811876773834
+5.0 rating review # 2500 , time lapsed: 2350.4528455734253
 
-4.0 rating review # 1700 , time lapsed: 2126.4017844200134
+4.0 rating review # 1700 , time lapsed: 2404.43346619606
 
-2.0 rating review # 1200 , time lapsed: 2181.3638331890106
+2.0 rating review # 1200 , time lapsed: 2412.9068043231964
 
-5.0 rating review # 2600 , time lapsed: 2184.95223903656
+5.0 rating review # 2600 , time lapsed: 2423.6520636081696
 
-3.0 rating review # 1500 , time lapsed: 2215.5364661216736
+3.0 rating review # 1500 , time lapsed: 2446.860988378525
 
-4.0 rating review # 1800 , time lapsed: 2224.766785621643
+4.0 rating review # 1800 , time lapsed: 2522.3800027370453
 
-5.0 rating review # 2700 , time lapsed: 2269.353574991226
+5.0 rating review # 2700 , time lapsed: 2524.820474386215
 
-1.0 rating review # 1200 , time lapsed: 2283.016045808792
+1.0 rating review # 1200 , time lapsed: 2552.5383384227753
 
-4.0 rating review # 1900 , time lapsed: 2313.8286612033844
+5.0 rating review # 2800 , time lapsed: 2612.9966690540314
 
-5.0 rating review # 2800 , time lapsed: 2344.2144198417664
+3.0 rating review # 1600 , time lapsed: 2620.02782869339
 
-3.0 rating review # 1600 , time lapsed: 2360.681391954422
+4.0 rating review # 1900 , time lapsed: 2630.7062668800354
 
-4.0 rating review # 2000 , time lapsed: 2401.1102962493896
+2.0 rating review # 1300 , time lapsed: 2708.851259946823
 
-1.0 rating review # 1300 , time lapsed: 2418.535706758499
+5.0 rating review # 2900 , time lapsed: 2710.480900287628
 
-5.0 rating review # 2900 , time lapsed: 2426.018699645996
+1.0 rating review # 1300 , time lapsed: 2715.5214195251465
 
-2.0 rating review # 1300 , time lapsed: 2431.340470790863
+4.0 rating review # 2000 , time lapsed: 2736.5960564613342
 
-5.0 rating review # 3000 , time lapsed: 2469.0466561317444
+5.0 rating review # 3000 , time lapsed: 2761.8455188274384
 
-3.0 rating review # 1700 , time lapsed: 2484.945148229599
+3.0 rating review # 1700 , time lapsed: 2768.5027120113373
 
-4.0 rating review # 2100 , time lapsed: 2491.7489557266235
+5.0 rating review # 3100 , time lapsed: 2826.834696292877
 
-5.0 rating review # 3100 , time lapsed: 2523.309574842453
+4.0 rating review # 2100 , time lapsed: 2849.453197956085
 
-5.0 rating review # 3200 , time lapsed: 2585.3672349452972
+Done rating 2.0 , 1372 reviews, time lapsed: 2891.260379552841
 
-1.0 rating review # 1400 , time lapsed: 2585.46098446846
+5.0 rating review # 3200 , time lapsed: 2898.1908435821533
 
-4.0 rating review # 2200 , time lapsed: 2587.2831115722656
+1.0 rating review # 1400 , time lapsed: 2913.5438046455383
 
-Done rating 2.0 , 1372 reviews, time lapsed: 2589.4213955402374
+3.0 rating review # 1800 , time lapsed: 2914.9071350097656
 
-3.0 rating review # 1800 , time lapsed: 2608.9920694828033
+4.0 rating review # 2200 , time lapsed: 2957.7944569587708
 
-5.0 rating review # 3300 , time lapsed: 2688.01877617836
+5.0 rating review # 3300 , time lapsed: 3018.310605764389
 
-4.0 rating review # 2300 , time lapsed: 2707.738051176071
+3.0 rating review # 1900 , time lapsed: 3081.1734325885773
 
-3.0 rating review # 1900 , time lapsed: 2751.6217205524445
+Done rating 3.0 , 1904 reviews, time lapsed: 3082.2944691181183
 
-Done rating 3.0 , 1904 reviews, time lapsed: 2752.721779346466
+4.0 rating review # 2300 , time lapsed: 3097.1257989406586
 
-5.0 rating review # 3400 , time lapsed: 2762.698138475418
+5.0 rating review # 3400 , time lapsed: 3103.6264045238495
 
-4.0 rating review # 2400 , time lapsed: 2803.554865837097
+1.0 rating review # 1500 , time lapsed: 3179.3249430656433
 
-1.0 rating review # 1500 , time lapsed: 2815.7702391147614
+4.0 rating review # 2400 , time lapsed: 3205.061108350754
 
-5.0 rating review # 3500 , time lapsed: 2862.786175966263
+5.0 rating review # 3500 , time lapsed: 3218.2238953113556
 
-4.0 rating review # 2500 , time lapsed: 2915.535139799118
+5.0 rating review # 3600 , time lapsed: 3293.0078036785126
 
-5.0 rating review # 3600 , time lapsed: 2928.146422147751
+1.0 rating review # 1600 , time lapsed: 3319.1712198257446
 
-1.0 rating review # 1600 , time lapsed: 2937.0107214450836
+5.0 rating review # 3700 , time lapsed: 3334.260111093521
 
-5.0 rating review # 3700 , time lapsed: 2964.229945421219
+4.0 rating review # 2500 , time lapsed: 3336.0852313041687
 
-5.0 rating review # 3800 , time lapsed: 2998.825816631317
+5.0 rating review # 3800 , time lapsed: 3374.908392429352
 
-4.0 rating review # 2600 , time lapsed: 3023.1536314487457
+1.0 rating review # 1700 , time lapsed: 3435.2475447654724
 
-1.0 rating review # 1700 , time lapsed: 3035.024892807007
+5.0 rating review # 3900 , time lapsed: 3450.233495235443
 
-5.0 rating review # 3900 , time lapsed: 3062.157348394394
+4.0 rating review # 2600 , time lapsed: 3465.931476354599
 
-4.0 rating review # 2700 , time lapsed: 3104.114140510559
+5.0 rating review # 4000 , time lapsed: 3528.8560268878937
 
-5.0 rating review # 4000 , time lapsed: 3129.5341761112213
+4.0 rating review # 2700 , time lapsed: 3562.056193590164
 
-1.0 rating review # 1800 , time lapsed: 3166.7826266288757
+1.0 rating review # 1800 , time lapsed: 3591.3448905944824
 
-4.0 rating review # 2800 , time lapsed: 3166.8723516464233
+5.0 rating review # 4100 , time lapsed: 3609.0764944553375
 
-5.0 rating review # 4100 , time lapsed: 3199.1287381649017
+4.0 rating review # 2800 , time lapsed: 3636.689606666565
 
-5.0 rating review # 4200 , time lapsed: 3261.8181257247925
+5.0 rating review # 4200 , time lapsed: 3682.979831933975
 
-4.0 rating review # 2900 , time lapsed: 3278.658582687378
+5.0 rating review # 4300 , time lapsed: 3754.696230649948
 
-1.0 rating review # 1900 , time lapsed: 3305.9785385131836
+1.0 rating review # 1900 , time lapsed: 3756.917250394821
 
-5.0 rating review # 4300 , time lapsed: 3321.8082151412964
+4.0 rating review # 2900 , time lapsed: 3773.7681798934937
 
-4.0 rating review # 3000 , time lapsed: 3353.7298967838287
+5.0 rating review # 4400 , time lapsed: 3814.1711173057556
 
-5.0 rating review # 4400 , time lapsed: 3372.487713098526
+5.0 rating review # 4500 , time lapsed: 3859.0052015781403
 
-5.0 rating review # 4500 , time lapsed: 3410.7474179267883
+4.0 rating review # 3000 , time lapsed: 3864.1280901432037
 
-4.0 rating review # 3100 , time lapsed: 3427.6203536987305
+5.0 rating review # 4600 , time lapsed: 3924.867996931076
 
-5.0 rating review # 4600 , time lapsed: 3466.6010823249817
+4.0 rating review # 3100 , time lapsed: 3953.4310495853424
 
-1.0 rating review # 2000 , time lapsed: 3512.992025613785
+1.0 rating review # 2000 , time lapsed: 4000.72057056427
 
-4.0 rating review # 3200 , time lapsed: 3526.9216372966766
+5.0 rating review # 4700 , time lapsed: 4013.7975590229034
 
-5.0 rating review # 4700 , time lapsed: 3544.2074213027954
+4.0 rating review # 3200 , time lapsed: 4070.3642876148224
 
-5.0 rating review # 4800 , time lapsed: 3613.8203315734863
+5.0 rating review # 4800 , time lapsed: 4086.5530014038086
 
-4.0 rating review # 3300 , time lapsed: 3638.298880815506
+1.0 rating review # 2100 , time lapsed: 4160.833010673523
 
-1.0 rating review # 2100 , time lapsed: 3654.8885250091553
+5.0 rating review # 4900 , time lapsed: 4163.603599786758
 
-5.0 rating review # 4900 , time lapsed: 3681.9920268058777
+4.0 rating review # 3300 , time lapsed: 4197.105082511902
 
-4.0 rating review # 3400 , time lapsed: 3719.75608587265
+5.0 rating review # 5000 , time lapsed: 4220.706659793854
 
-5.0 rating review # 5000 , time lapsed: 3731.8776803016663
+5.0 rating review # 5100 , time lapsed: 4270.199245929718
 
-5.0 rating review # 5100 , time lapsed: 3775.811182498932
+4.0 rating review # 3400 , time lapsed: 4292.8057816028595
 
-4.0 rating review # 3500 , time lapsed: 3820.4378623962402
+5.0 rating review # 5200 , time lapsed: 4349.720604658127
 
-1.0 rating review # 2200 , time lapsed: 3832.037211894989
+1.0 rating review # 2200 , time lapsed: 4368.741680622101
 
-5.0 rating review # 5200 , time lapsed: 3847.4780395030975
+5.0 rating review # 5300 , time lapsed: 4402.259033441544
 
-5.0 rating review # 5300 , time lapsed: 3891.1233649253845
+4.0 rating review # 3500 , time lapsed: 4409.0828166008
 
-Done rating 4.0 , 3559 reviews, time lapsed: 3892.6163527965546
+5.0 rating review # 5400 , time lapsed: 4467.2661962509155
 
-5.0 rating review # 5400 , time lapsed: 3952.084228992462
+Done rating 4.0 , 3559 reviews, time lapsed: 4497.146279096603
 
-5.0 rating review # 5500 , time lapsed: 4046.7650809288025
+5.0 rating review # 5500 , time lapsed: 4560.5896208286285
 
-1.0 rating review # 2300 , time lapsed: 4081.0793347358704
+5.0 rating review # 5600 , time lapsed: 4618.540017366409
 
-5.0 rating review # 5600 , time lapsed: 4106.794620037079
+1.0 rating review # 2300 , time lapsed: 4633.952272176743
 
-Done rating 1.0 , 2306 reviews, time lapsed: 4116.282271385193
+5.0 rating review # 5700 , time lapsed: 4652.833524942398
 
-5.0 rating review # 5700 , time lapsed: 4139.319796562195
+Done rating 1.0 , 2306 reviews, time lapsed: 4669.683431625366
 
-5.0 rating review # 5800 , time lapsed: 4178.658143997192
+5.0 rating review # 5800 , time lapsed: 4696.409031152725
 
-5.0 rating review # 5900 , time lapsed: 4258.475860118866
+5.0 rating review # 5900 , time lapsed: 4776.261583328247
 
-5.0 rating review # 6000 , time lapsed: 4323.053567647934
+5.0 rating review # 6000 , time lapsed: 4844.357134103775
 
-5.0 rating review # 6100 , time lapsed: 4378.958232879639
+5.0 rating review # 6100 , time lapsed: 4901.115565299988
 
-Done rating 5.0 , 6159 reviews, time lapsed: 4412.703056573868
+Done rating 5.0 , 6159 reviews, time lapsed: 4934.868260383606
 
 
-1.0 star(s) top 10 most used adjectives: ['good' 'other' 'bad' 'first' 'new' 'last' 'horrible' 'few' 'same' 'next']
-2.0 star(s) top 10 most used adjectives: ['good' 'other' 'great' 'bad' 'nice' 'first' 'much' 'little' 'few' 'small']
-3.0 star(s) top 10 most used adjectives: ['good' 'other' 'great' 'nice' 'little' 'small' 'bad' 'few' 'decent' 'hot']
-4.0 star(s) top 10 most used adjectives: ['good' 'great' 'nice' 'other' 'little' 'delicious' 'fresh' 'friendly'
- 'small' 'first']
-5.0 star(s) top 10 most used adjectives: ['great' 'good' 'friendly' 'delicious' 'nice' 'other' 'amazing' 'fresh'
- 'first' 'new']
+1.0 star(s) top 10 most used adjectives: [['good' '661']
+ ['other' '543']
+ ['bad' '433']
+ ['first' '337']
+ ['new' '319']
+ ['last' '310']
+ ['horrible' '257']
+ ['few' '249']
+ ['same' '246']
+ ['next' '244']]
+2.0 star(s) top 10 most used adjectives: [['good' '789']
+ ['other' '396']
+ ['great' '289']
+ ['bad' '236']
+ ['nice' '215']
+ ['first' '214']
+ ['much' '202']
+ ['little' '193']
+ ['few' '181']
+ ['small' '175']]
+3.0 star(s) top 10 most used adjectives: [['good' '1552']
+ ['other' '570']
+ ['great' '493']
+ ['nice' '430']
+ ['little' '384']
+ ['small' '285']
+ ['bad' '267']
+ ['few' '250']
+ ['decent' '237']
+ ['hot' '200']]
+4.0 star(s) top 10 most used adjectives: [['good' '2711']
+ ['great' '1572']
+ ['nice' '793']
+ ['other' '782']
+ ['little' '693']
+ ['delicious' '616']
+ ['fresh' '465']
+ ['friendly' '462']
+ ['small' '427']
+ ['first' '392']]
+5.0 star(s) top 10 most used adjectives: [['great' '2761']
+ ['good' '2099']
+ ['friendly' '974']
+ ['delicious' '913']
+ ['nice' '849']
+ ['other' '800']
+ ['amazing' '645']
+ ['fresh' '643']
+ ['first' '622']
+ ['new' '607']]
 
-1.0 star(s) top 10 most indicative adjectives: ['horrible' 'terrible' 'bad' 'rude' 'poor' 'awful' 'last' 'unprofessional'
- 'same' 'wrong']
-2.0 star(s) top 10 most indicative adjectives: ['bad' 'same' 'dry' 'other' 'second' 'decent' 'chinese' 'slow' 'empty'
- 'ok']
-3.0 star(s) top 10 most indicative adjectives: ['good' 'decent' 'other' 'small' 'ok' 'little' 'average' 'bad' 'large'
- 'fine']
-4.0 star(s) top 10 most indicative adjectives: ['good' 'little' 'delicious' 'nice' 'tasty' 'small' 'fresh' 'great' 'busy'
- 'large']
-5.0 star(s) top 10 most indicative adjectives: ['great' 'delicious' 'happy' 'friendly' 'wonderful' 'excellent'
- 'professional' 'helpful' 'fantastic' 'awesome']
-Duration:  4483.13271188736
+1.0 star(s) top 10 most indicative adjectives: [['horrible' '0.0007260690535662275']
+ ['terrible' '0.0006692570547655228']
+ ['bad' '0.0004583126560753085']
+ ['rude' '0.00038113517490350276']
+ ['poor' '0.00028941042911099515']
+ ['awful' '0.0002616248637120413']
+ ['last' '0.00023027294817158322']
+ ['unprofessional' '0.000194327282339215']
+ ['same' '0.00014892225428493754']
+ ['wrong' '0.0001268292343273748']]
+2.0 star(s) top 10 most indicative adjectives: [['bad' '0.0003370835076678225']
+ ['same' '0.00029692123800773024']
+ ['dry' '0.0002368192703167688']
+ ['other' '0.0001652666370557653']
+ ['second' '0.00016058071772631288']
+ ['decent' '0.0001604533450819246']
+ ['chinese' '0.00015712080608373095']
+ ['slow' '0.00015282543483857735']
+ ['empty' '0.00014867742125972236']
+ ['ok' '0.00014300058694615336']]
+3.0 star(s) top 10 most indicative adjectives: [['good' '0.001889789993429252']
+ ['decent' '0.0007673518401885085']
+ ['other' '0.0005630937324808011']
+ ['small' '0.0004479368495375062']
+ ['ok' '0.00034995027373768386']
+ ['little' '0.0003080951616301121']
+ ['average' '0.00028662357135238886']
+ ['bad' '0.00025219044325843577']
+ ['large' '0.00024357084515310522']
+ ['fine' '0.00018974327485490327']]
+4.0 star(s) top 10 most indicative adjectives: [['good' '0.002338383294296964']
+ ['little' '0.0004734773842808076']
+ ['delicious' '0.00046284490135840514']
+ ['nice' '0.000378789559034421']
+ ['tasty' '0.00036531195569407666']
+ ['small' '0.00031472560237316775']
+ ['fresh' '0.00026377729237955983']
+ ['great' '0.00025751713711033857']
+ ['busy' '0.00018974542484765893']
+ ['large' '0.00018825372047653438']]
+5.0 star(s) top 10 most indicative adjectives: [['great' '0.0014983237758149999']
+ ['delicious' '0.0006378525088272772']
+ ['happy' '0.0005130715903025544']
+ ['friendly' '0.0004699908245258429']
+ ['wonderful' '0.0003955761820773809']
+ ['excellent' '0.00038210125296238203']
+ ['professional' '0.00036985278816152335']
+ ['helpful' '0.0003579265709985086']
+ ['fantastic' '0.00035289940521520156']
+ ['awesome' '0.00033833582694163506']]
+Duration:  5006.637435674667
