@@ -76,6 +76,6 @@ class PairAdjectiveNounSummarizer:
                             pairs.append(pair)
 
         observations = collections.Counter(pairs)
-        print("Results %s" % name)
+        print("20 most common results of business id: %s" % name)
         print(observations.most_common(20))
         print("\n\n")

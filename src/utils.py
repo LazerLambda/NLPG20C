@@ -23,14 +23,14 @@ def plot_count(coll : collections.defaultdict(int), title : str, max : int, star
     top = list(sortedls)[-max:]
     top.reverse()
 
-    print("\n" + title)
-    print(top)
+    
+
 
     labels = list(map(lambda x: str(x[0]), top))
     values = list(map(lambda x: x[1], top))
-
-    print(labels)
-    print(values)
+    print("\nResults: " + title)
+    print("Labels: ", labels)
+    print("Values;", values)
 
     bars = plt.bar(labels, values)
     
