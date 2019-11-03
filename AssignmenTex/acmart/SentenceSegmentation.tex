@@ -1,6 +1,6 @@
 For the sentence segmentation we used the spacy library and also matplotlib for displaying the figures. The x-axis is the length of a review in number of sentences, and the y-axis shows the total number of reviews of such length.\\
 The most important part of the code is the following snippet. In a For-loop, the number of records in each individual review is counted and stored in a dict object. This data is then printed at the command line and can be seen in Figure 1.
-\begin{Verbatim}
+\begin{Verbatim}[fontsize=\tiny]
 def __init__(self, reviews : list) -> ():
 	...
 	self.nlp = en_core_web_sm.load()
