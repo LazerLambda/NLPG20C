@@ -1,11 +1,12 @@
-For the sentence segmentation we used the spacy library, also the collections library for the counting and matplotlib for the figures . Each category is displayed in figure 1. The x-axis is shows the length of a review in number of sentences, and the y-axis shows the total number of reviews of such length.\\
+For the sentence segmentation we used the spacy library and also matplotlib for displaying the figures. The x-axis is the length of a review in number of sentences, and the y-axis shows the total number of reviews of such length.\\
+The most important part of the code is the following snippet. In a For-loop, the number of records in each individual review is counted and stored in a dict object. This data is then printed at the command line and can be seen in Figure 1.
 \begin{Verbatim}
 def __init__(self, reviews : list) -> ():
 	...
 	self.nlp = en_core_web_sm.load()
 ...
-# Sentence Segmentation
-ret_dict = collections.defaultdict(int)
+	# Sentence Segmentation
+	ret_dict = collections.defaultdict(int)
 	for elem in text:
 		doc = self.nlp(elem['text'])
 		length = len(list(doc.sents))
@@ -21,5 +22,5 @@ ret_dict = collections.defaultdict(int)
 		\end{table}
 	\end{center}
 	
-As can be seen, the length of the reviews are larger in bad ratings than in good ratings. This can also be seen in the average review length (Table 1). The average length of a review with a 1 star rating is 6 sentences larger than the average length of sentences of a review with 5 Stars. 
+As can be seen, the length of the reviews are larger in bad ratings than in good ratings. This is also underlined in the average review length (Table 1). The average length of a review with a 1 star rating is 6 sentences larger than the average length of sentences of a review with 5 Stars. 
 	
