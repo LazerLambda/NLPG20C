@@ -1,40 +1,5 @@
 Based on the most indicatives adjectives for each rating star found in the previous part. We develop an application to identify the good and bad features of a business. Taking in a user input for the business id, the application will print out the list of good features and bad features of the particular business. This is done by first, making lists of adjectives with positive connotation and negative connotation. We also make another list containing negative words that negates the meaning of an adjective, such as no, not, never, none. 
 
-For each review of a particular business, which contains any of the positive or negative adjectives in the list, we check if the next word is a noun. If the next word is a noun, we append the adjective-noun to either list of good features or list of bad features, based on the nature of the adjective identified. On the other hand, if the next word is not a noun, we check if the previous word is a negation, if it is, we will append the previous three words to the adjectives to either list of good features or list of bad features. For example, if a review contains the phrase: 'the service was not great at all.', and 'great' is in our list of good adjective, then we will append 'service was not great' to the list of bad features because it the word before 'great' is 'not', a negation word.
-
-The following shows the result of running the application.
-
-    \begin{table}
-        \centering
-        \tiny
-        \caption{Application result}
-        \begin{tabular}{c|c}
-            \hline
-            \multicolumn{2}{c}{Business ID: daqYMX3Y4QR8xl-BUlYBPw}\\
-            \multicolumn{2}{c}{ }\\
-            \hline
-            Good features &'fresh fruit': 5, 'great service': 3, 'great bread': 2,\\
-            &'fresh avocado': 2, 'good torta': 2, 'delicious food': 2,\\
-            &'great food': 2, 'good food': 2, 'great variety': 1,\\
-            &'tasty sandwich': 1, 'tasty pan': 1, 'fine dining': 1,\\
-            &'great value': 1, 'friendly place': 1, 'delicious pork': 1,\\
-            &'fresh salad': 1, 'excellent staff': 1, 'good value': 1,\\
-            &'good sandwich': 1, 'nice tang': 1, 'wonderful quesadilla': 1,\\
-            &'great torta/taco': 1, 'wonderful stuff': 1, 'good fun': 1,\\
-            &'good variety': 1, 'good quality': 1, 'great atmosphere': 1,\\
-            &'good sign': 1, 'good flavor': 1, 'great family': 1,\\
-            &'excellent food': 1, 'good nonetheless': 1, 'great place': 1,\\
-            &'delicious tomato': 1, 'fresh cream': 1, 'awesome service': 1,\\
-            &'excellent breakfast': 1, 'delicious chicken': 1,\\
-            &'friendly service': 1, 'fresh avacado': 1, 'great flavor': 1\\
-            &\\
-            \hline
-            Bad features &'service was not great': 1, 'bad one': 1,\\
-            &'wrong order': 1, 'are now no good': 1, 'poor job': 1\\
-            &\\
-            \hline
-             
-        \end{tabular}
-    \end{table}
+For each review of a particular business, which contains any of the positive or negative adjectives in the list, we check if the next word is a noun. If the next word is a noun, we append the adjective-noun to either list of good features or list of bad features, based on the nature of the adjective identified. On the other hand, if the next word is not a noun, we check if the previous word is a negation, if it is, we will append the previous three words to the adjectives to either list of good features or list of bad features. For example, if a review contains the phrase: 'the service was not great at all.', and 'great' is in our list of good adjective, then we will append 'service was not great' to the list of bad features because it the word before 'great' is 'not', a negation word. The results can be found in the appendix, Table 7.
 
 From the result, we can deduce that the business is a restaurant with a lot of positive reviews stating that it serves 'delicious food' and 'fresh fruit', although there are also some negative reviews stating that the 'service was not great' and 'poor job'. The application helps business owner and customers alike to identify more specific features available at the business. In this case, the restaurant is known for serving 'fresh fruit' and has various delicious menu, such as pork, sandwich, and chicken.
