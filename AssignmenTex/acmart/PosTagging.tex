@@ -1,1 +1,17 @@
-For the POS tagging, we used the word\_tokenize() function from the nltk library. Section in the appendix shows the results of POS tagging 5 random reviews.\\
+For the POS tagging, we used the word\_tokenize() function from the nltk library.
+
+\begin{Verbatim}[fontsize=\tiny]
+
+    random_sen=[]
+    for i in range(0,5):
+        x=random.randint(0,len(reviews)-1)
+        random_sen.append((reviews[x].get('text')))
+
+    for sen in random_sen:
+        print(sen)
+        tokens=nltk.word_tokenize(sen)
+        print("parts of speech:", nltk.pos_tag(tokens))
+
+\end{Verbatim}
+
+Section in the appendix shows the results of POS tagging 5 random reviews.\\

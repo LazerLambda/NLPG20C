@@ -1,13 +1,72 @@
-There are two tasks in this section: (1) To list the top-10 most frequently used adjectives for each rating star (i.e. 1 to 5), and (2) To list the top-10 most indicative adjectives for each rating star. First, we tokenize all the words (including punctuations) in all the reviews and count the frequency of each word in all the reviews, storing both in separate arrays. Then, we separate the reviews based on the rating star, tokenize the reviews and do POS tagging on the tokens to identify the adjectives. Using the nltk library, the POS tagging for adjectives is 'JJ'. For each adjective identified in a rating star, the adjective and its frequency will be stored in two arrays. After going through all the reviews with the particular rating star, we calculate the "indicativeness" of each adjectives using the formula:
+There are two tasks in this section: (1) To list the top-10 most frequently used adjectives for each rating star (i.e. 1 to 5), and (2) To list the top-10 most indicative adjectives for each rating star. First, we tokenize all the words (including punctuations) in all the reviews and count the frequency of each word in all the reviews, storing both in separate arrays. Then, we separate the reviews based on the rating star, tokenize the reviews and do POS tagging on the tokens to identify the adjectives. Using the nltk library, the POS tagging for adjectives is 'JJ'. For each adjective identified in a rating star, the adjective and its frequency will be stored in two arrays. 
+
+\begin{Verbatim}[fontsize=\tiny]
+    # identify and count number of adjectives and store in arrays
+    for review in rating_reviews:
+        tokens = nltk.word_tokenize(review)
+        for i in range(len(nltk.pos_tag(tokens))):
+            if((nltk.pos_tag(tokens))[i][1] == 'JJ'):
+                word = (nltk.pos_tag(tokens))[i][0].lower()
+                if(word not in adj):
+                    adj.append(word)
+                    adj_count.append(1)
+                
+                else:
+                    idx = adj.index(word)
+                    adj_count[idx] = adj_count[idx] + 1
+
+        rating_word_count += len(tokens)
+        review_idx = rating_reviews.index(review)
+        
+        # print duration
+        if(review_idx %100 == 0):
+            time_lapse = time.time() - start
+            print(star, "rating review #", review_idx, ", 
+            time lapsed:", time_lapse)
+            print("")
+\end{Verbatim}
+
+After going through all the reviews with the particular rating star, we calculate the "indicativeness" of each adjectives using the formula:
     \begin{equation}
         Indicativeness = P(w|Ri)×log(P(w|Ri)/P(w))
     \end{equation}
     
     where P(w|Ri) is the probability of observing the adjective w in the reviews with rating star i, and P(w) is the probability of observing the adjective w in all the reviews.
-    
-The adjectives array is then sorted twice, based on the frequency and based on the indicativeness. From the sorted arrays, we return the top-10 most frequently used adjectives for the rating star and the top-10 most indicative adjectives for the rating star, and print them. The result can be seen in the appendix, figure .
 
-The results for the most indicative adjectives are more descriptive for a rating system where 1 stars are the worst rating. It gives more weight to specific words (terrible, horrible, unprofessional) which appear more frequently in the specific rating. Meanwhile, the list of most frequently used adjectives is less descriptive since it does not take into account for negation. As an example, the following table shows the frequency of the adjective 'good' in each rating star.
+\begin{Verbatim}[fontsize=\tiny]
+    for i in range(len(adj)):
+        idx = words.index(adj[i])
+        prob_adj_all = words_count[idx]/data_word_count
+        prob_adj_rating = adj_count[i]/rating_word_count
+        adj_indicative = prob_adj_rating * 
+        (math.log(prob_adj_rating / prob_adj_all))
+    
+        adj_count_tuple = (adj[i], adj_count[i])
+        adj_count_list.append(adj_count_tuple)
+    
+        adj_ind_tuple = (adj[i], adj_indicative)
+        adj_ind_list.append(adj_ind_tuple)
+\end{Verbatim}
+
+    
+The adjectives array is then sorted twice, based on the frequency and based on the indicativeness. From the sorted arrays, we return the top-10 most frequently used adjectives for the rating star and the top-10 most indicative adjectives for the rating star, and print them. 
+
+\begin{Verbatim}[fontsize=\tiny]
+    # list of top 10 adjectives in the reviews of rating star='star'
+    adj_top10 = []
+    for i in range(0,10):
+        adj_top10.append(adj_count_sorted[i])
+
+    # sort the list based on adjectives with highest indicativeness
+    adj_ind_sorted = sorted(adj_ind_list, key=getKey, reverse=True)
+
+    # list of top 10 adjectives in the reviews of rating star='star'
+    adj_top10_ind = []
+    for i in range(0,10):
+        adj_top10_ind.append(adj_ind_sorted[i])
+\end{Verbatim}
+
+The result can be seen in the appendix, figure. The results for the most indicative adjectives are more descriptive for a rating system where 1 stars are the worst rating. It gives more weight to specific words (terrible, horrible, unprofessional) which appear more frequently in the specific rating. Meanwhile, the list of most frequently used adjectives is less descriptive since it does not take into account for negation. As an example, the following table shows the frequency of the adjective 'good' in each rating star.
 
     \begin{center}
         \begin{table}[!h]

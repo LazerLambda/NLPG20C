@@ -1,5 +1,30 @@
 For this task, we used the NLTK library to calculate the number of unique tokens that exist in a review. Then, we plotted the graphs to show the distributions of the tokens, both with and without stemming.
 
+\begin{Verbatim}[fontsize=\tiny]
+    # tokens in each review
+    self.df['tokenizedwords'] = self.df.apply(lambda x:
+    nltk.word_tokenize(x['text']), axis = 1)
+    self.df['lengthoftokenized'] = self.df.apply(lambda x:
+    len(set(x['tokenizedwords'])), axis = 1)
+    self.tokencounts = self.df['lengthoftokenized'].value_counts().to_dict()
+    self.tokencounts = collections.OrderedDict(sorted(self.tokencounts.items(),
+    key=lambda t: t[0]))
+    plot_graph(self.tokencounts, "Tokenized Reviews (without Stemming)", "No. of
+    tokens in a review", "No. of reviews", "token_review.png")
+
+    # stems in each review
+    self.df['stemmedwords'] = self.df['tokenizedwords'].apply(lambda x:
+    [self.ps.stem(y) for y in x])
+    self.df['lengthofstemmedtokens'] = self.df.apply(lambda x:
+    len(set(x['stemmedwords'])), axis = 1)
+    self.stemcounts = self.df['lengthofstemmedtokens'].value_counts().to_dict()
+    self.stemcounts = collections.OrderedDict(sorted(self.stemcounts.items(),
+    key=lambda t: t[0]))
+    plot_graph(self.stemcounts, "Tokenized Reviews (with Stemming)", 
+    "No. of tokens in a review", "No. of reviews", "token_stemmed_review.png")
+     
+\end{Verbatim}
+
 We can see that Figure 2 shows the number of unique tokens without stemming in every review, while Figure 3 shows the number of unique tokens after stemming is performed in every review.
 
 To make the comparison easier, in Figure 4, the stems are indicated with the color orange, while the tokens are indicated with the color blue.
